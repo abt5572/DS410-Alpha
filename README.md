@@ -16,5 +16,5 @@ Find ways to implement machine learning models (Neural networks, Random forest, 
 
 Find the best hyper-parameters for every model developed - **NAME**
 
-Find any potential code or methods that we just learned from lab 8 and lab 9 that we can use for our project - **NAME**
+Find any potential code or methods that we just learned from lab 8 and lab 9 that we can use for our project - **Nax**
 
