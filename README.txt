@@ -6,4 +6,4 @@ Code: Includes all the code files we have workes one
 Deliverables: PDF of the deliverables submissions
 charts and figures: includes all of our graphs and charts from this project
 Final-Documents: The documents due for submission through canvas
-visuals_logs_and_other_work: includes other kmeans visuals from running in cluster
+visuals_logs_and_other_work: includes other kmeans and decision tree visuals from running in cluster
