@@ -1,0 +1,1356 @@
+/storage/icds/RISE/sw8/anaconda/anaconda3/lib/python3.9/site-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.24.1
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+23/12/02 17:52:02 INFO SparkContext: Running Spark version 3.3.0
+23/12/02 17:52:02 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/12/02 17:52:02 INFO ResourceUtils: ==============================================================
+23/12/02 17:52:02 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/12/02 17:52:02 INFO ResourceUtils: ==============================================================
+23/12/02 17:52:02 INFO SparkContext: Submitted application: ProjectTree1
+23/12/02 17:52:02 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/12/02 17:52:02 INFO ResourceProfile: Limiting resource is cpu
+23/12/02 17:52:02 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/12/02 17:52:02 INFO SecurityManager: Changing view acls to: sxs6549
+23/12/02 17:52:02 INFO SecurityManager: Changing modify acls to: sxs6549
+23/12/02 17:52:02 INFO SecurityManager: Changing view acls groups to: 
+23/12/02 17:52:02 INFO SecurityManager: Changing modify acls groups to: 
+23/12/02 17:52:02 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(sxs6549); groups with view permissions: Set(); users  with modify permissions: Set(sxs6549); groups with modify permissions: Set()
+23/12/02 17:52:02 INFO Utils: Successfully started service 'sparkDriver' on port 42777.
+23/12/02 17:52:02 INFO SparkEnv: Registering MapOutputTracker
+23/12/02 17:52:02 INFO SparkEnv: Registering BlockManagerMaster
+23/12/02 17:52:02 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/12/02 17:52:02 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/12/02 17:52:02 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/12/02 17:52:02 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-023841df-7cff-4315-bc2e-c87b1d0f6843
+23/12/02 17:52:02 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/12/02 17:52:02 INFO SparkEnv: Registering OutputCommitCoordinator
+23/12/02 17:52:03 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+23/12/02 17:52:03 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+23/12/02 17:52:03 INFO Executor: Starting executor ID driver on host p-sc-2348.2e.hpc.psu.edu
+23/12/02 17:52:03 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/12/02 17:52:03 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46407.
+23/12/02 17:52:03 INFO NettyBlockTransferService: Server created on p-sc-2348.2e.hpc.psu.edu:46407
+23/12/02 17:52:03 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/12/02 17:52:03 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, p-sc-2348.2e.hpc.psu.edu, 46407, None)
+23/12/02 17:52:03 INFO BlockManagerMasterEndpoint: Registering block manager p-sc-2348.2e.hpc.psu.edu:46407 with 434.4 MiB RAM, BlockManagerId(driver, p-sc-2348.2e.hpc.psu.edu, 46407, None)
+23/12/02 17:52:03 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, p-sc-2348.2e.hpc.psu.edu, 46407, None)
+23/12/02 17:52:03 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, p-sc-2348.2e.hpc.psu.edu, 46407, None)
+23/12/02 17:52:03 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/12/02 17:52:03 INFO SharedState: Warehouse path is 'file:/storage/work/sxs6549/Project/spark-warehouse'.
+23/12/02 17:52:04 INFO InMemoryFileIndex: It took 37 ms to list leaf files for 1 paths.
+23/12/02 17:52:04 INFO InMemoryFileIndex: It took 2 ms to list leaf files for 1 paths.
+23/12/02 17:52:06 INFO FileSourceStrategy: Pushed Filters: 
+23/12/02 17:52:06 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#0, None)) > 0)
+23/12/02 17:52:06 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+23/12/02 17:52:06 INFO CodeGenerator: Code generated in 135.330879 ms
+23/12/02 17:52:06 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.6 KiB, free 434.2 MiB)
+23/12/02 17:52:06 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.1 KiB, free 434.2 MiB)
+23/12/02 17:52:06 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 34.1 KiB, free: 434.4 MiB)
+23/12/02 17:52:06 INFO SparkContext: Created broadcast 0 from csv at NativeMethodAccessorImpl.java:0
+23/12/02 17:52:06 INFO FileSourceScanExec: Planning scan with bin packing, max size: 134217728 bytes, open cost is considered as scanning 4194304 bytes.
+23/12/02 17:52:06 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+23/12/02 17:52:06 INFO DAGScheduler: Got job 0 (csv at NativeMethodAccessorImpl.java:0) with 1 output partitions
+23/12/02 17:52:06 INFO DAGScheduler: Final stage: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0)
+23/12/02 17:52:06 INFO DAGScheduler: Parents of final stage: List()
+23/12/02 17:52:06 INFO DAGScheduler: Missing parents: List()
+23/12/02 17:52:06 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+23/12/02 17:52:06 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 11.8 KiB, free 434.2 MiB)
+23/12/02 17:52:06 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 5.9 KiB, free 434.2 MiB)
+23/12/02 17:52:06 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 5.9 KiB, free: 434.4 MiB)
+23/12/02 17:52:06 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1513
+23/12/02 17:52:06 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+23/12/02 17:52:06 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+23/12/02 17:52:07 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 0, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:07 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/12/02 17:52:07 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 0-134217728, partition values: [empty row]
+23/12/02 17:52:07 INFO CodeGenerator: Code generated in 10.900762 ms
+23/12/02 17:52:07 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 3885 bytes result sent to driver
+23/12/02 17:52:07 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 190 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (1/1)
+23/12/02 17:52:07 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/12/02 17:52:07 INFO DAGScheduler: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0) finished in 0.291 s
+23/12/02 17:52:07 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/12/02 17:52:07 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+23/12/02 17:52:07 INFO DAGScheduler: Job 0 finished: csv at NativeMethodAccessorImpl.java:0, took 0.325205 s
+23/12/02 17:52:07 INFO CodeGenerator: Code generated in 8.259254 ms
+23/12/02 17:52:07 INFO FileSourceStrategy: Pushed Filters: 
+23/12/02 17:52:07 INFO FileSourceStrategy: Post-Scan Filters: 
+23/12/02 17:52:07 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+23/12/02 17:52:07 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.6 KiB, free 434.0 MiB)
+23/12/02 17:52:07 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 34.1 KiB, free 433.9 MiB)
+23/12/02 17:52:07 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 34.1 KiB, free: 434.3 MiB)
+23/12/02 17:52:07 INFO SparkContext: Created broadcast 2 from csv at NativeMethodAccessorImpl.java:0
+23/12/02 17:52:07 INFO FileSourceScanExec: Planning scan with bin packing, max size: 134217728 bytes, open cost is considered as scanning 4194304 bytes.
+23/12/02 17:52:07 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+23/12/02 17:52:07 INFO DAGScheduler: Got job 1 (csv at NativeMethodAccessorImpl.java:0) with 43 output partitions
+23/12/02 17:52:07 INFO DAGScheduler: Final stage: ResultStage 1 (csv at NativeMethodAccessorImpl.java:0)
+23/12/02 17:52:07 INFO DAGScheduler: Parents of final stage: List()
+23/12/02 17:52:07 INFO DAGScheduler: Missing parents: List()
+23/12/02 17:52:07 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[9] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+23/12/02 17:52:07 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 33.4 KiB, free 433.9 MiB)
+23/12/02 17:52:07 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 14.1 KiB, free 433.9 MiB)
+23/12/02 17:52:07 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 14.1 KiB, free: 434.3 MiB)
+23/12/02 17:52:07 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1513
+23/12/02 17:52:07 INFO DAGScheduler: Submitting 43 missing tasks from ResultStage 1 (MapPartitionsRDD[9] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+23/12/02 17:52:07 INFO TaskSchedulerImpl: Adding task set 1.0 with 43 tasks resource profile 0
+23/12/02 17:52:07 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 0, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:07 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 2) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 1, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:07 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 3) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 2, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:07 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 4) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 3, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:07 INFO TaskSetManager: Starting task 4.0 in stage 1.0 (TID 5) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 4, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:07 INFO TaskSetManager: Starting task 5.0 in stage 1.0 (TID 6) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 5, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:07 INFO TaskSetManager: Starting task 6.0 in stage 1.0 (TID 7) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 6, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:07 INFO TaskSetManager: Starting task 7.0 in stage 1.0 (TID 8) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 7, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:07 INFO TaskSetManager: Starting task 8.0 in stage 1.0 (TID 9) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 8, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:07 INFO TaskSetManager: Starting task 9.0 in stage 1.0 (TID 10) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 9, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:07 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+23/12/02 17:52:07 INFO Executor: Running task 1.0 in stage 1.0 (TID 2)
+23/12/02 17:52:07 INFO Executor: Running task 2.0 in stage 1.0 (TID 3)
+23/12/02 17:52:07 INFO Executor: Running task 3.0 in stage 1.0 (TID 4)
+23/12/02 17:52:07 INFO Executor: Running task 4.0 in stage 1.0 (TID 5)
+23/12/02 17:52:07 INFO Executor: Running task 5.0 in stage 1.0 (TID 6)
+23/12/02 17:52:07 INFO Executor: Running task 7.0 in stage 1.0 (TID 8)
+23/12/02 17:52:07 INFO Executor: Running task 6.0 in stage 1.0 (TID 7)
+23/12/02 17:52:07 INFO Executor: Running task 8.0 in stage 1.0 (TID 9)
+23/12/02 17:52:07 INFO Executor: Running task 9.0 in stage 1.0 (TID 10)
+23/12/02 17:52:07 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 805306368-939524096, partition values: [empty row]
+23/12/02 17:52:07 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1207959552-1342177280, partition values: [empty row]
+23/12/02 17:52:07 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 939524096-1073741824, partition values: [empty row]
+23/12/02 17:52:07 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 402653184-536870912, partition values: [empty row]
+23/12/02 17:52:07 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 0-134217728, partition values: [empty row]
+23/12/02 17:52:07 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1073741824-1207959552, partition values: [empty row]
+23/12/02 17:52:07 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 671088640-805306368, partition values: [empty row]
+23/12/02 17:52:07 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 134217728-268435456, partition values: [empty row]
+23/12/02 17:52:07 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 536870912-671088640, partition values: [empty row]
+23/12/02 17:52:07 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 268435456-402653184, partition values: [empty row]
+23/12/02 17:52:07 INFO BlockManagerInfo: Removed broadcast_0_piece0 on p-sc-2348.2e.hpc.psu.edu:46407 in memory (size: 34.1 KiB, free: 434.3 MiB)
+23/12/02 17:52:07 INFO BlockManagerInfo: Removed broadcast_1_piece0 on p-sc-2348.2e.hpc.psu.edu:46407 in memory (size: 5.9 KiB, free: 434.4 MiB)
+23/12/02 17:52:12 INFO Executor: Finished task 1.0 in stage 1.0 (TID 2). 3688 bytes result sent to driver
+23/12/02 17:52:12 INFO TaskSetManager: Starting task 10.0 in stage 1.0 (TID 11) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 10, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:12 INFO Executor: Running task 10.0 in stage 1.0 (TID 11)
+23/12/02 17:52:12 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 2) in 5532 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (1/43)
+23/12/02 17:52:12 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 3645 bytes result sent to driver
+23/12/02 17:52:12 INFO TaskSetManager: Starting task 11.0 in stage 1.0 (TID 12) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 11, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:12 INFO Executor: Running task 11.0 in stage 1.0 (TID 12)
+23/12/02 17:52:12 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1342177280-1476395008, partition values: [empty row]
+23/12/02 17:52:12 INFO Executor: Finished task 8.0 in stage 1.0 (TID 9). 3645 bytes result sent to driver
+23/12/02 17:52:12 INFO TaskSetManager: Starting task 12.0 in stage 1.0 (TID 13) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 12, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:12 INFO Executor: Running task 12.0 in stage 1.0 (TID 13)
+23/12/02 17:52:12 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1476395008-1610612736, partition values: [empty row]
+23/12/02 17:52:12 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 5552 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (2/43)
+23/12/02 17:52:12 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1610612736-1744830464, partition values: [empty row]
+23/12/02 17:52:12 INFO TaskSetManager: Finished task 8.0 in stage 1.0 (TID 9) in 5553 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (3/43)
+23/12/02 17:52:13 INFO Executor: Finished task 7.0 in stage 1.0 (TID 8). 3645 bytes result sent to driver
+23/12/02 17:52:13 INFO TaskSetManager: Starting task 13.0 in stage 1.0 (TID 14) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 13, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:13 INFO TaskSetManager: Finished task 7.0 in stage 1.0 (TID 8) in 5668 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (4/43)
+23/12/02 17:52:13 INFO Executor: Running task 13.0 in stage 1.0 (TID 14)
+23/12/02 17:52:13 INFO Executor: Finished task 9.0 in stage 1.0 (TID 10). 3645 bytes result sent to driver
+23/12/02 17:52:13 INFO TaskSetManager: Starting task 14.0 in stage 1.0 (TID 15) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 14, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:13 INFO TaskSetManager: Finished task 9.0 in stage 1.0 (TID 10) in 5697 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (5/43)
+23/12/02 17:52:13 INFO Executor: Running task 14.0 in stage 1.0 (TID 15)
+23/12/02 17:52:13 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1879048192-2013265920, partition values: [empty row]
+23/12/02 17:52:13 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1744830464-1879048192, partition values: [empty row]
+23/12/02 17:52:13 INFO Executor: Finished task 2.0 in stage 1.0 (TID 3). 3645 bytes result sent to driver
+23/12/02 17:52:13 INFO TaskSetManager: Starting task 15.0 in stage 1.0 (TID 16) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 15, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:13 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 3) in 5788 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (6/43)
+23/12/02 17:52:13 INFO Executor: Running task 15.0 in stage 1.0 (TID 16)
+23/12/02 17:52:13 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2013265920-2147483648, partition values: [empty row]
+23/12/02 17:52:13 INFO Executor: Finished task 3.0 in stage 1.0 (TID 4). 3645 bytes result sent to driver
+23/12/02 17:52:13 INFO TaskSetManager: Starting task 16.0 in stage 1.0 (TID 17) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 16, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:13 INFO Executor: Running task 16.0 in stage 1.0 (TID 17)
+23/12/02 17:52:13 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 4) in 6161 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (7/43)
+23/12/02 17:52:13 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2147483648-2281701376, partition values: [empty row]
+23/12/02 17:52:13 INFO Executor: Finished task 4.0 in stage 1.0 (TID 5). 3645 bytes result sent to driver
+23/12/02 17:52:13 INFO TaskSetManager: Starting task 17.0 in stage 1.0 (TID 18) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 17, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:13 INFO Executor: Running task 17.0 in stage 1.0 (TID 18)
+23/12/02 17:52:13 INFO TaskSetManager: Finished task 4.0 in stage 1.0 (TID 5) in 6180 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (8/43)
+23/12/02 17:52:13 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2281701376-2415919104, partition values: [empty row]
+23/12/02 17:52:13 INFO Executor: Finished task 6.0 in stage 1.0 (TID 7). 3645 bytes result sent to driver
+23/12/02 17:52:13 INFO TaskSetManager: Starting task 18.0 in stage 1.0 (TID 19) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 18, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:13 INFO Executor: Running task 18.0 in stage 1.0 (TID 19)
+23/12/02 17:52:13 INFO TaskSetManager: Finished task 6.0 in stage 1.0 (TID 7) in 6314 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (9/43)
+23/12/02 17:52:13 INFO Executor: Finished task 5.0 in stage 1.0 (TID 6). 3645 bytes result sent to driver
+23/12/02 17:52:13 INFO TaskSetManager: Starting task 19.0 in stage 1.0 (TID 20) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 19, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:13 INFO TaskSetManager: Finished task 5.0 in stage 1.0 (TID 6) in 6317 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (10/43)
+23/12/02 17:52:13 INFO Executor: Running task 19.0 in stage 1.0 (TID 20)
+23/12/02 17:52:13 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2415919104-2550136832, partition values: [empty row]
+23/12/02 17:52:13 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2550136832-2684354560, partition values: [empty row]
+23/12/02 17:52:17 INFO Executor: Finished task 11.0 in stage 1.0 (TID 12). 3645 bytes result sent to driver
+23/12/02 17:52:17 INFO TaskSetManager: Starting task 20.0 in stage 1.0 (TID 21) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 20, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:17 INFO TaskSetManager: Finished task 11.0 in stage 1.0 (TID 12) in 5007 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (11/43)
+23/12/02 17:52:17 INFO Executor: Running task 20.0 in stage 1.0 (TID 21)
+23/12/02 17:52:17 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2684354560-2818572288, partition values: [empty row]
+23/12/02 17:52:17 INFO Executor: Finished task 10.0 in stage 1.0 (TID 11). 3645 bytes result sent to driver
+23/12/02 17:52:17 INFO TaskSetManager: Starting task 21.0 in stage 1.0 (TID 22) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 21, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:17 INFO Executor: Running task 21.0 in stage 1.0 (TID 22)
+23/12/02 17:52:17 INFO TaskSetManager: Finished task 10.0 in stage 1.0 (TID 11) in 5061 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (12/43)
+23/12/02 17:52:18 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2818572288-2952790016, partition values: [empty row]
+23/12/02 17:52:18 INFO Executor: Finished task 16.0 in stage 1.0 (TID 17). 3645 bytes result sent to driver
+23/12/02 17:52:18 INFO TaskSetManager: Starting task 22.0 in stage 1.0 (TID 23) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 22, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:18 INFO TaskSetManager: Finished task 16.0 in stage 1.0 (TID 17) in 4468 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (13/43)
+23/12/02 17:52:18 INFO Executor: Running task 22.0 in stage 1.0 (TID 23)
+23/12/02 17:52:18 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2952790016-3087007744, partition values: [empty row]
+23/12/02 17:52:18 INFO Executor: Finished task 14.0 in stage 1.0 (TID 15). 3645 bytes result sent to driver
+23/12/02 17:52:18 INFO TaskSetManager: Starting task 23.0 in stage 1.0 (TID 24) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 23, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:18 INFO TaskSetManager: Finished task 14.0 in stage 1.0 (TID 15) in 5019 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (14/43)
+23/12/02 17:52:18 INFO Executor: Running task 23.0 in stage 1.0 (TID 24)
+23/12/02 17:52:18 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3087007744-3221225472, partition values: [empty row]
+23/12/02 17:52:18 INFO Executor: Finished task 12.0 in stage 1.0 (TID 13). 3645 bytes result sent to driver
+23/12/02 17:52:18 INFO TaskSetManager: Starting task 24.0 in stage 1.0 (TID 25) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 24, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:18 INFO TaskSetManager: Finished task 12.0 in stage 1.0 (TID 13) in 5238 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (15/43)
+23/12/02 17:52:18 INFO Executor: Running task 24.0 in stage 1.0 (TID 25)
+23/12/02 17:52:18 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3221225472-3355443200, partition values: [empty row]
+23/12/02 17:52:18 INFO Executor: Finished task 13.0 in stage 1.0 (TID 14). 3645 bytes result sent to driver
+23/12/02 17:52:18 INFO TaskSetManager: Starting task 25.0 in stage 1.0 (TID 26) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 25, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:18 INFO Executor: Running task 25.0 in stage 1.0 (TID 26)
+23/12/02 17:52:18 INFO TaskSetManager: Finished task 13.0 in stage 1.0 (TID 14) in 5175 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (16/43)
+23/12/02 17:52:18 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3355443200-3489660928, partition values: [empty row]
+23/12/02 17:52:18 INFO Executor: Finished task 15.0 in stage 1.0 (TID 16). 3645 bytes result sent to driver
+23/12/02 17:52:18 INFO Executor: Finished task 17.0 in stage 1.0 (TID 18). 3645 bytes result sent to driver
+23/12/02 17:52:18 INFO TaskSetManager: Starting task 26.0 in stage 1.0 (TID 27) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 26, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:18 INFO TaskSetManager: Starting task 27.0 in stage 1.0 (TID 28) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 27, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:18 INFO Executor: Running task 26.0 in stage 1.0 (TID 27)
+23/12/02 17:52:18 INFO TaskSetManager: Finished task 15.0 in stage 1.0 (TID 16) in 5126 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (17/43)
+23/12/02 17:52:18 INFO TaskSetManager: Finished task 17.0 in stage 1.0 (TID 18) in 4733 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (18/43)
+23/12/02 17:52:18 INFO Executor: Running task 27.0 in stage 1.0 (TID 28)
+23/12/02 17:52:18 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3489660928-3623878656, partition values: [empty row]
+23/12/02 17:52:18 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3623878656-3758096384, partition values: [empty row]
+23/12/02 17:52:18 INFO Executor: Finished task 18.0 in stage 1.0 (TID 19). 3645 bytes result sent to driver
+23/12/02 17:52:18 INFO TaskSetManager: Starting task 28.0 in stage 1.0 (TID 29) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 28, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:18 INFO TaskSetManager: Finished task 18.0 in stage 1.0 (TID 19) in 4688 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (19/43)
+23/12/02 17:52:18 INFO Executor: Running task 28.0 in stage 1.0 (TID 29)
+23/12/02 17:52:18 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3758096384-3892314112, partition values: [empty row]
+23/12/02 17:52:18 INFO Executor: Finished task 19.0 in stage 1.0 (TID 20). 3645 bytes result sent to driver
+23/12/02 17:52:18 INFO TaskSetManager: Starting task 29.0 in stage 1.0 (TID 30) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 29, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:18 INFO Executor: Running task 29.0 in stage 1.0 (TID 30)
+23/12/02 17:52:18 INFO TaskSetManager: Finished task 19.0 in stage 1.0 (TID 20) in 4790 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (20/43)
+23/12/02 17:52:18 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3892314112-4026531840, partition values: [empty row]
+23/12/02 17:52:22 INFO Executor: Finished task 22.0 in stage 1.0 (TID 23). 3645 bytes result sent to driver
+23/12/02 17:52:22 INFO TaskSetManager: Starting task 30.0 in stage 1.0 (TID 31) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 30, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:22 INFO TaskSetManager: Finished task 22.0 in stage 1.0 (TID 23) in 4391 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (21/43)
+23/12/02 17:52:22 INFO Executor: Running task 30.0 in stage 1.0 (TID 31)
+23/12/02 17:52:22 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4026531840-4160749568, partition values: [empty row]
+23/12/02 17:52:22 INFO Executor: Finished task 21.0 in stage 1.0 (TID 22). 3645 bytes result sent to driver
+23/12/02 17:52:22 INFO TaskSetManager: Starting task 31.0 in stage 1.0 (TID 32) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 31, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:22 INFO Executor: Running task 31.0 in stage 1.0 (TID 32)
+23/12/02 17:52:22 INFO TaskSetManager: Finished task 21.0 in stage 1.0 (TID 22) in 4472 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (22/43)
+23/12/02 17:52:22 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4160749568-4294967296, partition values: [empty row]
+23/12/02 17:52:22 INFO Executor: Finished task 23.0 in stage 1.0 (TID 24). 3645 bytes result sent to driver
+23/12/02 17:52:22 INFO TaskSetManager: Starting task 32.0 in stage 1.0 (TID 33) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 32, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:22 INFO TaskSetManager: Finished task 23.0 in stage 1.0 (TID 24) in 4497 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (23/43)
+23/12/02 17:52:22 INFO Executor: Running task 32.0 in stage 1.0 (TID 33)
+23/12/02 17:52:22 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4294967296-4429185024, partition values: [empty row]
+23/12/02 17:52:22 INFO Executor: Finished task 24.0 in stage 1.0 (TID 25). 3645 bytes result sent to driver
+23/12/02 17:52:22 INFO TaskSetManager: Starting task 33.0 in stage 1.0 (TID 34) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 33, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:22 INFO TaskSetManager: Finished task 24.0 in stage 1.0 (TID 25) in 4445 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (24/43)
+23/12/02 17:52:22 INFO Executor: Running task 33.0 in stage 1.0 (TID 34)
+23/12/02 17:52:22 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4429185024-4563402752, partition values: [empty row]
+23/12/02 17:52:22 INFO Executor: Finished task 27.0 in stage 1.0 (TID 28). 3645 bytes result sent to driver
+23/12/02 17:52:22 INFO TaskSetManager: Starting task 34.0 in stage 1.0 (TID 35) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 34, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:22 INFO TaskSetManager: Finished task 27.0 in stage 1.0 (TID 28) in 4476 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (25/43)
+23/12/02 17:52:22 INFO Executor: Running task 34.0 in stage 1.0 (TID 35)
+23/12/02 17:52:22 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4563402752-4697620480, partition values: [empty row]
+23/12/02 17:52:22 INFO Executor: Finished task 28.0 in stage 1.0 (TID 29). 3645 bytes result sent to driver
+23/12/02 17:52:22 INFO TaskSetManager: Starting task 35.0 in stage 1.0 (TID 36) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 35, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:22 INFO TaskSetManager: Finished task 28.0 in stage 1.0 (TID 29) in 4439 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (26/43)
+23/12/02 17:52:22 INFO Executor: Running task 35.0 in stage 1.0 (TID 36)
+23/12/02 17:52:22 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4697620480-4831838208, partition values: [empty row]
+23/12/02 17:52:22 INFO Executor: Finished task 29.0 in stage 1.0 (TID 30). 3645 bytes result sent to driver
+23/12/02 17:52:22 INFO TaskSetManager: Starting task 36.0 in stage 1.0 (TID 37) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 36, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:22 INFO Executor: Running task 36.0 in stage 1.0 (TID 37)
+23/12/02 17:52:22 INFO TaskSetManager: Finished task 29.0 in stage 1.0 (TID 30) in 4453 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (27/43)
+23/12/02 17:52:22 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4831838208-4966055936, partition values: [empty row]
+23/12/02 17:52:23 INFO Executor: Finished task 25.0 in stage 1.0 (TID 26). 3645 bytes result sent to driver
+23/12/02 17:52:23 INFO TaskSetManager: Starting task 37.0 in stage 1.0 (TID 38) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 37, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:23 INFO TaskSetManager: Finished task 25.0 in stage 1.0 (TID 26) in 4835 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (28/43)
+23/12/02 17:52:23 INFO Executor: Running task 37.0 in stage 1.0 (TID 38)
+23/12/02 17:52:23 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4966055936-5100273664, partition values: [empty row]
+23/12/02 17:52:23 INFO Executor: Finished task 26.0 in stage 1.0 (TID 27). 3645 bytes result sent to driver
+23/12/02 17:52:23 INFO TaskSetManager: Starting task 38.0 in stage 1.0 (TID 39) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 38, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:23 INFO TaskSetManager: Finished task 26.0 in stage 1.0 (TID 27) in 4907 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (29/43)
+23/12/02 17:52:23 INFO Executor: Running task 38.0 in stage 1.0 (TID 39)
+23/12/02 17:52:23 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5100273664-5234491392, partition values: [empty row]
+23/12/02 17:52:23 INFO Executor: Finished task 20.0 in stage 1.0 (TID 21). 3645 bytes result sent to driver
+23/12/02 17:52:23 INFO TaskSetManager: Starting task 39.0 in stage 1.0 (TID 40) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 39, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:23 INFO TaskSetManager: Finished task 20.0 in stage 1.0 (TID 21) in 5453 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (30/43)
+23/12/02 17:52:23 INFO Executor: Running task 39.0 in stage 1.0 (TID 40)
+23/12/02 17:52:23 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5234491392-5368709120, partition values: [empty row]
+23/12/02 17:52:27 INFO Executor: Finished task 31.0 in stage 1.0 (TID 32). 3645 bytes result sent to driver
+23/12/02 17:52:27 INFO TaskSetManager: Starting task 40.0 in stage 1.0 (TID 41) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 40, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:27 INFO Executor: Running task 40.0 in stage 1.0 (TID 41)
+23/12/02 17:52:27 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5368709120-5502926848, partition values: [empty row]
+23/12/02 17:52:27 INFO TaskSetManager: Finished task 31.0 in stage 1.0 (TID 32) in 4639 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (31/43)
+23/12/02 17:52:27 INFO Executor: Finished task 32.0 in stage 1.0 (TID 33). 3645 bytes result sent to driver
+23/12/02 17:52:27 INFO TaskSetManager: Starting task 41.0 in stage 1.0 (TID 42) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 41, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:27 INFO Executor: Running task 41.0 in stage 1.0 (TID 42)
+23/12/02 17:52:27 INFO TaskSetManager: Finished task 32.0 in stage 1.0 (TID 33) in 4642 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (32/43)
+23/12/02 17:52:27 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5502926848-5637144576, partition values: [empty row]
+23/12/02 17:52:27 INFO Executor: Finished task 30.0 in stage 1.0 (TID 31). 3645 bytes result sent to driver
+23/12/02 17:52:27 INFO TaskSetManager: Starting task 42.0 in stage 1.0 (TID 43) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 42, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:27 INFO TaskSetManager: Finished task 30.0 in stage 1.0 (TID 31) in 4897 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (33/43)
+23/12/02 17:52:27 INFO Executor: Running task 42.0 in stage 1.0 (TID 43)
+23/12/02 17:52:27 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5637144576-5688115791, partition values: [empty row]
+23/12/02 17:52:27 INFO Executor: Finished task 34.0 in stage 1.0 (TID 35). 3645 bytes result sent to driver
+23/12/02 17:52:27 INFO TaskSetManager: Finished task 34.0 in stage 1.0 (TID 35) in 4607 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (34/43)
+23/12/02 17:52:27 INFO Executor: Finished task 35.0 in stage 1.0 (TID 36). 3645 bytes result sent to driver
+23/12/02 17:52:27 INFO TaskSetManager: Finished task 35.0 in stage 1.0 (TID 36) in 4570 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (35/43)
+23/12/02 17:52:27 INFO Executor: Finished task 33.0 in stage 1.0 (TID 34). 3645 bytes result sent to driver
+23/12/02 17:52:27 INFO TaskSetManager: Finished task 33.0 in stage 1.0 (TID 34) in 4832 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (36/43)
+23/12/02 17:52:27 INFO Executor: Finished task 36.0 in stage 1.0 (TID 37). 3645 bytes result sent to driver
+23/12/02 17:52:27 INFO TaskSetManager: Finished task 36.0 in stage 1.0 (TID 37) in 4574 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (37/43)
+23/12/02 17:52:27 INFO Executor: Finished task 37.0 in stage 1.0 (TID 38). 3645 bytes result sent to driver
+23/12/02 17:52:27 INFO TaskSetManager: Finished task 37.0 in stage 1.0 (TID 38) in 4552 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (38/43)
+23/12/02 17:52:27 INFO Executor: Finished task 38.0 in stage 1.0 (TID 39). 3645 bytes result sent to driver
+23/12/02 17:52:27 INFO TaskSetManager: Finished task 38.0 in stage 1.0 (TID 39) in 4493 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (39/43)
+23/12/02 17:52:28 INFO Executor: Finished task 39.0 in stage 1.0 (TID 40). 3645 bytes result sent to driver
+23/12/02 17:52:28 INFO TaskSetManager: Finished task 39.0 in stage 1.0 (TID 40) in 4654 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (40/43)
+23/12/02 17:52:28 INFO Executor: Finished task 42.0 in stage 1.0 (TID 43). 3645 bytes result sent to driver
+23/12/02 17:52:28 INFO TaskSetManager: Finished task 42.0 in stage 1.0 (TID 43) in 1567 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (41/43)
+23/12/02 17:52:31 INFO Executor: Finished task 40.0 in stage 1.0 (TID 41). 3645 bytes result sent to driver
+23/12/02 17:52:31 INFO TaskSetManager: Finished task 40.0 in stage 1.0 (TID 41) in 3922 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (42/43)
+23/12/02 17:52:31 INFO Executor: Finished task 41.0 in stage 1.0 (TID 42). 3645 bytes result sent to driver
+23/12/02 17:52:31 INFO TaskSetManager: Finished task 41.0 in stage 1.0 (TID 42) in 3882 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (43/43)
+23/12/02 17:52:31 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/12/02 17:52:31 INFO DAGScheduler: ResultStage 1 (csv at NativeMethodAccessorImpl.java:0) finished in 23.781 s
+23/12/02 17:52:31 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/12/02 17:52:31 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+23/12/02 17:52:31 INFO DAGScheduler: Job 1 finished: csv at NativeMethodAccessorImpl.java:0, took 23.789232 s
+23/12/02 17:52:31 INFO FileSourceStrategy: Pushed Filters: 
+23/12/02 17:52:31 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/12/02 17:52:31 INFO FileSourceStrategy: Post-Scan Filters: atleastnnonnulls(397, Polygon_ID#17, acq_date#18, frp#19, Neighbour#20, Neighbour_frp#21, CBC2014_max#22, CBC2014_min#23, CBC2014_median#24, CBC2014_sum#25, CBC2014_mode#26, CBC2014_count#27, CBC2014_mean#28, CBD2012_max#29, CBD2012_min#30, CBD2012_median#31, CBD2012_sum#32, CBD2012_mode#33, CBD2012_count#34, CBD2012_mean#35, CBD2016_max#36, CBD2016_min#37, CBD2016_median#38, CBD2016_sum#39, ... 374 more fields)
+23/12/02 17:52:31 INFO FileSourceStrategy: Output Data Schema: struct<Polygon_ID: int, acq_date: timestamp, frp: double, Neighbour: int, Neighbour_frp: double ... 395 more fields>
+23/12/02 17:52:31 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 199.4 KiB, free 433.9 MiB)
+23/12/02 17:52:31 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 34.0 KiB, free 433.9 MiB)
+23/12/02 17:52:31 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 34.0 KiB, free: 434.3 MiB)
+23/12/02 17:52:31 INFO SparkContext: Created broadcast 4 from rdd at PCA.scala:89
+23/12/02 17:52:31 INFO FileSourceScanExec: Planning scan with bin packing, max size: 134217728 bytes, open cost is considered as scanning 4194304 bytes.
+23/12/02 17:52:32 INFO SparkContext: Starting job: first at PCA.scala:44
+23/12/02 17:52:32 INFO DAGScheduler: Got job 2 (first at PCA.scala:44) with 1 output partitions
+23/12/02 17:52:32 INFO DAGScheduler: Final stage: ResultStage 2 (first at PCA.scala:44)
+23/12/02 17:52:32 INFO DAGScheduler: Parents of final stage: List()
+23/12/02 17:52:32 INFO DAGScheduler: Missing parents: List()
+23/12/02 17:52:32 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[17] at map at PCA.scala:89), which has no missing parents
+23/12/02 17:52:32 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 203.4 KiB, free 433.7 MiB)
+23/12/02 17:52:32 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 59.7 KiB, free 433.6 MiB)
+23/12/02 17:52:32 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 59.7 KiB, free: 434.3 MiB)
+23/12/02 17:52:32 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1513
+23/12/02 17:52:32 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[17] at map at PCA.scala:89) (first 15 tasks are for partitions Vector(0))
+23/12/02 17:52:32 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+23/12/02 17:52:32 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 44) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 0, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:32 INFO Executor: Running task 0.0 in stage 2.0 (TID 44)
+23/12/02 17:52:32 INFO CodeGenerator: Code generated in 196.592071 ms
+23/12/02 17:52:32 INFO CodeGenerator: Code generated in 100.843894 ms
+23/12/02 17:52:32 INFO CodeGenerator: Code generated in 6.281016 ms
+23/12/02 17:52:32 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 0-134217728, partition values: [empty row]
+23/12/02 17:52:32 INFO CodeGenerator: Code generated in 84.725717 ms
+23/12/02 17:52:32 INFO CodeGenerator: Code generated in 7.754627 ms
+23/12/02 17:52:32 INFO Executor: Finished task 0.0 in stage 2.0 (TID 44). 4815 bytes result sent to driver
+23/12/02 17:52:32 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 44) in 759 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (1/1)
+23/12/02 17:52:32 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+23/12/02 17:52:32 INFO DAGScheduler: ResultStage 2 (first at PCA.scala:44) finished in 0.769 s
+23/12/02 17:52:32 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+23/12/02 17:52:32 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+23/12/02 17:52:32 INFO DAGScheduler: Job 2 finished: first at PCA.scala:44, took 0.772627 s
+23/12/02 17:52:32 INFO SparkContext: Starting job: first at RowMatrix.scala:62
+23/12/02 17:52:32 INFO DAGScheduler: Got job 3 (first at RowMatrix.scala:62) with 1 output partitions
+23/12/02 17:52:32 INFO DAGScheduler: Final stage: ResultStage 3 (first at RowMatrix.scala:62)
+23/12/02 17:52:32 INFO DAGScheduler: Parents of final stage: List()
+23/12/02 17:52:32 INFO DAGScheduler: Missing parents: List()
+23/12/02 17:52:32 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[17] at map at PCA.scala:89), which has no missing parents
+23/12/02 17:52:32 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 203.4 KiB, free 433.4 MiB)
+23/12/02 17:52:32 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 59.7 KiB, free 433.4 MiB)
+23/12/02 17:52:32 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 59.7 KiB, free: 434.2 MiB)
+23/12/02 17:52:32 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1513
+23/12/02 17:52:32 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[17] at map at PCA.scala:89) (first 15 tasks are for partitions Vector(0))
+23/12/02 17:52:32 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks resource profile 0
+23/12/02 17:52:32 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 45) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 0, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:52:32 INFO Executor: Running task 0.0 in stage 3.0 (TID 45)
+23/12/02 17:52:32 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 0-134217728, partition values: [empty row]
+23/12/02 17:52:33 INFO Executor: Finished task 0.0 in stage 3.0 (TID 45). 4772 bytes result sent to driver
+23/12/02 17:52:33 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 45) in 132 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (1/1)
+23/12/02 17:52:33 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+23/12/02 17:52:33 INFO DAGScheduler: ResultStage 3 (first at RowMatrix.scala:62) finished in 0.141 s
+23/12/02 17:52:33 INFO DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+23/12/02 17:52:33 INFO TaskSchedulerImpl: Killing all running tasks in stage 3: Stage finished
+23/12/02 17:52:33 INFO DAGScheduler: Job 3 finished: first at RowMatrix.scala:62, took 0.144086 s
+23/12/02 17:52:33 INFO SparkContext: Starting job: treeAggregate at Statistics.scala:58
+23/12/02 17:52:33 INFO DAGScheduler: Registering RDD 20 (treeAggregate at Statistics.scala:58) as input to shuffle 0
+23/12/02 17:52:33 INFO DAGScheduler: Got job 4 (treeAggregate at Statistics.scala:58) with 6 output partitions
+23/12/02 17:52:33 INFO DAGScheduler: Final stage: ResultStage 5 (treeAggregate at Statistics.scala:58)
+23/12/02 17:52:33 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 4)
+23/12/02 17:52:33 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 4)
+23/12/02 17:52:33 INFO DAGScheduler: Submitting ShuffleMapStage 4 (MapPartitionsRDD[20] at treeAggregate at Statistics.scala:58), which has no missing parents
+23/12/02 17:52:33 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 207.8 KiB, free 433.2 MiB)
+23/12/02 17:52:33 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 60.1 KiB, free 433.1 MiB)
+23/12/02 17:52:33 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 60.1 KiB, free: 434.1 MiB)
+23/12/02 17:52:33 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1513
+23/12/02 17:52:33 INFO DAGScheduler: Submitting 43 missing tasks from ShuffleMapStage 4 (MapPartitionsRDD[20] at treeAggregate at Statistics.scala:58) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+23/12/02 17:52:33 INFO TaskSchedulerImpl: Adding task set 4.0 with 43 tasks resource profile 0
+23/12/02 17:52:33 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 46) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 0, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:33 INFO TaskSetManager: Starting task 1.0 in stage 4.0 (TID 47) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 1, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:33 INFO TaskSetManager: Starting task 2.0 in stage 4.0 (TID 48) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 2, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:33 INFO TaskSetManager: Starting task 3.0 in stage 4.0 (TID 49) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 3, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:33 INFO TaskSetManager: Starting task 4.0 in stage 4.0 (TID 50) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 4, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:33 INFO TaskSetManager: Starting task 5.0 in stage 4.0 (TID 51) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 5, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:33 INFO TaskSetManager: Starting task 6.0 in stage 4.0 (TID 52) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 6, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:33 INFO TaskSetManager: Starting task 7.0 in stage 4.0 (TID 53) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 7, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:33 INFO TaskSetManager: Starting task 8.0 in stage 4.0 (TID 54) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 8, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:33 INFO TaskSetManager: Starting task 9.0 in stage 4.0 (TID 55) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 9, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:33 INFO Executor: Running task 2.0 in stage 4.0 (TID 48)
+23/12/02 17:52:33 INFO Executor: Running task 0.0 in stage 4.0 (TID 46)
+23/12/02 17:52:33 INFO Executor: Running task 1.0 in stage 4.0 (TID 47)
+23/12/02 17:52:33 INFO Executor: Running task 3.0 in stage 4.0 (TID 49)
+23/12/02 17:52:33 INFO Executor: Running task 4.0 in stage 4.0 (TID 50)
+23/12/02 17:52:33 INFO Executor: Running task 6.0 in stage 4.0 (TID 52)
+23/12/02 17:52:33 INFO Executor: Running task 8.0 in stage 4.0 (TID 54)
+23/12/02 17:52:33 INFO Executor: Running task 7.0 in stage 4.0 (TID 53)
+23/12/02 17:52:33 INFO Executor: Running task 5.0 in stage 4.0 (TID 51)
+23/12/02 17:52:33 INFO Executor: Running task 9.0 in stage 4.0 (TID 55)
+23/12/02 17:52:33 INFO BlockManagerInfo: Removed broadcast_5_piece0 on p-sc-2348.2e.hpc.psu.edu:46407 in memory (size: 59.7 KiB, free: 434.2 MiB)
+23/12/02 17:52:33 INFO BlockManagerInfo: Removed broadcast_6_piece0 on p-sc-2348.2e.hpc.psu.edu:46407 in memory (size: 59.7 KiB, free: 434.3 MiB)
+23/12/02 17:52:33 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1207959552-1342177280, partition values: [empty row]
+23/12/02 17:52:33 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 268435456-402653184, partition values: [empty row]
+23/12/02 17:52:33 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 671088640-805306368, partition values: [empty row]
+23/12/02 17:52:33 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 536870912-671088640, partition values: [empty row]
+23/12/02 17:52:33 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 0-134217728, partition values: [empty row]
+23/12/02 17:52:33 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 402653184-536870912, partition values: [empty row]
+23/12/02 17:52:33 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 939524096-1073741824, partition values: [empty row]
+23/12/02 17:52:33 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1073741824-1207959552, partition values: [empty row]
+23/12/02 17:52:33 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 805306368-939524096, partition values: [empty row]
+23/12/02 17:52:33 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 134217728-268435456, partition values: [empty row]
+23/12/02 17:52:33 INFO BlockManagerInfo: Removed broadcast_2_piece0 on p-sc-2348.2e.hpc.psu.edu:46407 in memory (size: 34.1 KiB, free: 434.3 MiB)
+23/12/02 17:52:33 INFO BlockManagerInfo: Removed broadcast_3_piece0 on p-sc-2348.2e.hpc.psu.edu:46407 in memory (size: 14.1 KiB, free: 434.3 MiB)
+23/12/02 17:52:41 INFO Executor: Finished task 4.0 in stage 4.0 (TID 50). 1917 bytes result sent to driver
+23/12/02 17:52:41 INFO Executor: Finished task 8.0 in stage 4.0 (TID 54). 1917 bytes result sent to driver
+23/12/02 17:52:41 INFO TaskSetManager: Starting task 10.0 in stage 4.0 (TID 56) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 10, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:41 INFO Executor: Running task 10.0 in stage 4.0 (TID 56)
+23/12/02 17:52:41 INFO TaskSetManager: Finished task 4.0 in stage 4.0 (TID 50) in 8528 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (1/43)
+23/12/02 17:52:41 INFO TaskSetManager: Starting task 11.0 in stage 4.0 (TID 57) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 11, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:41 INFO TaskSetManager: Finished task 8.0 in stage 4.0 (TID 54) in 8528 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (2/43)
+23/12/02 17:52:41 INFO Executor: Running task 11.0 in stage 4.0 (TID 57)
+23/12/02 17:52:41 INFO Executor: Finished task 7.0 in stage 4.0 (TID 53). 1874 bytes result sent to driver
+23/12/02 17:52:41 INFO TaskSetManager: Starting task 12.0 in stage 4.0 (TID 58) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 12, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:41 INFO Executor: Running task 12.0 in stage 4.0 (TID 58)
+23/12/02 17:52:41 INFO TaskSetManager: Finished task 7.0 in stage 4.0 (TID 53) in 8575 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (3/43)
+23/12/02 17:52:41 INFO Executor: Finished task 3.0 in stage 4.0 (TID 49). 1874 bytes result sent to driver
+23/12/02 17:52:41 INFO TaskSetManager: Starting task 13.0 in stage 4.0 (TID 59) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 13, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:41 INFO Executor: Running task 13.0 in stage 4.0 (TID 59)
+23/12/02 17:52:41 INFO TaskSetManager: Finished task 3.0 in stage 4.0 (TID 49) in 8585 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (4/43)
+23/12/02 17:52:41 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1476395008-1610612736, partition values: [empty row]
+23/12/02 17:52:41 INFO Executor: Finished task 5.0 in stage 4.0 (TID 51). 1874 bytes result sent to driver
+23/12/02 17:52:41 INFO TaskSetManager: Starting task 14.0 in stage 4.0 (TID 60) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 14, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:41 INFO Executor: Running task 14.0 in stage 4.0 (TID 60)
+23/12/02 17:52:41 INFO TaskSetManager: Finished task 5.0 in stage 4.0 (TID 51) in 8639 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (5/43)
+23/12/02 17:52:41 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1342177280-1476395008, partition values: [empty row]
+23/12/02 17:52:41 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1744830464-1879048192, partition values: [empty row]
+23/12/02 17:52:41 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1879048192-2013265920, partition values: [empty row]
+23/12/02 17:52:41 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1610612736-1744830464, partition values: [empty row]
+23/12/02 17:52:41 INFO Executor: Finished task 2.0 in stage 4.0 (TID 48). 1874 bytes result sent to driver
+23/12/02 17:52:41 INFO TaskSetManager: Starting task 15.0 in stage 4.0 (TID 61) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 15, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:41 INFO TaskSetManager: Finished task 2.0 in stage 4.0 (TID 48) in 8716 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (6/43)
+23/12/02 17:52:41 INFO Executor: Running task 15.0 in stage 4.0 (TID 61)
+23/12/02 17:52:41 INFO Executor: Finished task 9.0 in stage 4.0 (TID 55). 1874 bytes result sent to driver
+23/12/02 17:52:41 INFO TaskSetManager: Starting task 16.0 in stage 4.0 (TID 62) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 16, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:41 INFO TaskSetManager: Finished task 9.0 in stage 4.0 (TID 55) in 8760 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (7/43)
+23/12/02 17:52:41 INFO Executor: Running task 16.0 in stage 4.0 (TID 62)
+23/12/02 17:52:41 INFO Executor: Finished task 0.0 in stage 4.0 (TID 46). 1874 bytes result sent to driver
+23/12/02 17:52:41 INFO TaskSetManager: Starting task 17.0 in stage 4.0 (TID 63) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 17, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:41 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 46) in 8801 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (8/43)
+23/12/02 17:52:41 INFO Executor: Running task 17.0 in stage 4.0 (TID 63)
+23/12/02 17:52:42 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2013265920-2147483648, partition values: [empty row]
+23/12/02 17:52:42 INFO Executor: Finished task 6.0 in stage 4.0 (TID 52). 1874 bytes result sent to driver
+23/12/02 17:52:42 INFO TaskSetManager: Starting task 18.0 in stage 4.0 (TID 64) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 18, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:42 INFO TaskSetManager: Finished task 6.0 in stage 4.0 (TID 52) in 8827 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (9/43)
+23/12/02 17:52:42 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2147483648-2281701376, partition values: [empty row]
+23/12/02 17:52:42 INFO Executor: Running task 18.0 in stage 4.0 (TID 64)
+23/12/02 17:52:42 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2281701376-2415919104, partition values: [empty row]
+23/12/02 17:52:42 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2415919104-2550136832, partition values: [empty row]
+23/12/02 17:52:42 INFO Executor: Finished task 1.0 in stage 4.0 (TID 47). 1874 bytes result sent to driver
+23/12/02 17:52:42 INFO TaskSetManager: Starting task 19.0 in stage 4.0 (TID 65) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 19, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:42 INFO Executor: Running task 19.0 in stage 4.0 (TID 65)
+23/12/02 17:52:42 INFO TaskSetManager: Finished task 1.0 in stage 4.0 (TID 47) in 9176 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (10/43)
+23/12/02 17:52:42 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2550136832-2684354560, partition values: [empty row]
+23/12/02 17:52:48 INFO Executor: Finished task 12.0 in stage 4.0 (TID 58). 1874 bytes result sent to driver
+23/12/02 17:52:48 INFO TaskSetManager: Starting task 20.0 in stage 4.0 (TID 66) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 20, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:48 INFO TaskSetManager: Finished task 12.0 in stage 4.0 (TID 58) in 6872 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (11/43)
+23/12/02 17:52:48 INFO Executor: Running task 20.0 in stage 4.0 (TID 66)
+23/12/02 17:52:48 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2684354560-2818572288, partition values: [empty row]
+23/12/02 17:52:48 INFO Executor: Finished task 10.0 in stage 4.0 (TID 56). 1874 bytes result sent to driver
+23/12/02 17:52:48 INFO TaskSetManager: Starting task 21.0 in stage 4.0 (TID 67) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 21, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:48 INFO TaskSetManager: Finished task 10.0 in stage 4.0 (TID 56) in 7054 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (12/43)
+23/12/02 17:52:48 INFO Executor: Running task 21.0 in stage 4.0 (TID 67)
+23/12/02 17:52:48 INFO Executor: Finished task 13.0 in stage 4.0 (TID 59). 1874 bytes result sent to driver
+23/12/02 17:52:48 INFO TaskSetManager: Starting task 22.0 in stage 4.0 (TID 68) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 22, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:48 INFO Executor: Running task 22.0 in stage 4.0 (TID 68)
+23/12/02 17:52:48 INFO TaskSetManager: Finished task 13.0 in stage 4.0 (TID 59) in 7029 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (13/43)
+23/12/02 17:52:48 INFO Executor: Finished task 11.0 in stage 4.0 (TID 57). 1874 bytes result sent to driver
+23/12/02 17:52:48 INFO TaskSetManager: Starting task 23.0 in stage 4.0 (TID 69) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 23, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:48 INFO TaskSetManager: Finished task 11.0 in stage 4.0 (TID 57) in 7088 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (14/43)
+23/12/02 17:52:48 INFO Executor: Running task 23.0 in stage 4.0 (TID 69)
+23/12/02 17:52:48 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2818572288-2952790016, partition values: [empty row]
+23/12/02 17:52:48 INFO Executor: Finished task 14.0 in stage 4.0 (TID 60). 1874 bytes result sent to driver
+23/12/02 17:52:48 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3087007744-3221225472, partition values: [empty row]
+23/12/02 17:52:48 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2952790016-3087007744, partition values: [empty row]
+23/12/02 17:52:48 INFO TaskSetManager: Starting task 24.0 in stage 4.0 (TID 70) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 24, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:48 INFO TaskSetManager: Finished task 14.0 in stage 4.0 (TID 60) in 7027 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (15/43)
+23/12/02 17:52:48 INFO Executor: Running task 24.0 in stage 4.0 (TID 70)
+23/12/02 17:52:48 INFO Executor: Finished task 18.0 in stage 4.0 (TID 64). 1874 bytes result sent to driver
+23/12/02 17:52:48 INFO TaskSetManager: Starting task 25.0 in stage 4.0 (TID 71) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 25, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:48 INFO TaskSetManager: Finished task 18.0 in stage 4.0 (TID 64) in 6896 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (16/43)
+23/12/02 17:52:48 INFO Executor: Running task 25.0 in stage 4.0 (TID 71)
+23/12/02 17:52:48 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3221225472-3355443200, partition values: [empty row]
+23/12/02 17:52:49 INFO Executor: Finished task 16.0 in stage 4.0 (TID 62). 1874 bytes result sent to driver
+23/12/02 17:52:49 INFO TaskSetManager: Starting task 26.0 in stage 4.0 (TID 72) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 26, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:49 INFO TaskSetManager: Finished task 16.0 in stage 4.0 (TID 62) in 7046 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (17/43)
+23/12/02 17:52:49 INFO Executor: Running task 26.0 in stage 4.0 (TID 72)
+23/12/02 17:52:49 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3355443200-3489660928, partition values: [empty row]
+23/12/02 17:52:49 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3489660928-3623878656, partition values: [empty row]
+23/12/02 17:52:49 INFO Executor: Finished task 17.0 in stage 4.0 (TID 63). 1874 bytes result sent to driver
+23/12/02 17:52:49 INFO TaskSetManager: Starting task 27.0 in stage 4.0 (TID 73) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 27, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:49 INFO Executor: Running task 27.0 in stage 4.0 (TID 73)
+23/12/02 17:52:49 INFO TaskSetManager: Finished task 17.0 in stage 4.0 (TID 63) in 7161 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (18/43)
+23/12/02 17:52:49 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3623878656-3758096384, partition values: [empty row]
+23/12/02 17:52:49 INFO Executor: Finished task 19.0 in stage 4.0 (TID 65). 1874 bytes result sent to driver
+23/12/02 17:52:49 INFO TaskSetManager: Starting task 28.0 in stage 4.0 (TID 74) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 28, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:49 INFO TaskSetManager: Finished task 19.0 in stage 4.0 (TID 65) in 6892 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (19/43)
+23/12/02 17:52:49 INFO Executor: Running task 28.0 in stage 4.0 (TID 74)
+23/12/02 17:52:49 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3758096384-3892314112, partition values: [empty row]
+23/12/02 17:52:49 INFO Executor: Finished task 15.0 in stage 4.0 (TID 61). 1874 bytes result sent to driver
+23/12/02 17:52:49 INFO TaskSetManager: Starting task 29.0 in stage 4.0 (TID 75) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 29, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:49 INFO TaskSetManager: Finished task 15.0 in stage 4.0 (TID 61) in 7488 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (20/43)
+23/12/02 17:52:49 INFO Executor: Running task 29.0 in stage 4.0 (TID 75)
+23/12/02 17:52:49 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3892314112-4026531840, partition values: [empty row]
+23/12/02 17:52:55 INFO Executor: Finished task 20.0 in stage 4.0 (TID 66). 1874 bytes result sent to driver
+23/12/02 17:52:55 INFO TaskSetManager: Starting task 30.0 in stage 4.0 (TID 76) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 30, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:55 INFO TaskSetManager: Finished task 20.0 in stage 4.0 (TID 66) in 7037 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (21/43)
+23/12/02 17:52:55 INFO Executor: Running task 30.0 in stage 4.0 (TID 76)
+23/12/02 17:52:55 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4026531840-4160749568, partition values: [empty row]
+23/12/02 17:52:55 INFO Executor: Finished task 22.0 in stage 4.0 (TID 68). 1874 bytes result sent to driver
+23/12/02 17:52:55 INFO TaskSetManager: Starting task 31.0 in stage 4.0 (TID 77) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 31, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:55 INFO Executor: Running task 31.0 in stage 4.0 (TID 77)
+23/12/02 17:52:55 INFO TaskSetManager: Finished task 22.0 in stage 4.0 (TID 68) in 7030 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (22/43)
+23/12/02 17:52:55 INFO Executor: Finished task 25.0 in stage 4.0 (TID 71). 1874 bytes result sent to driver
+23/12/02 17:52:55 INFO TaskSetManager: Starting task 32.0 in stage 4.0 (TID 78) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 32, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:55 INFO TaskSetManager: Finished task 25.0 in stage 4.0 (TID 71) in 6932 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (23/43)
+23/12/02 17:52:55 INFO Executor: Running task 32.0 in stage 4.0 (TID 78)
+23/12/02 17:52:55 INFO Executor: Finished task 26.0 in stage 4.0 (TID 72). 1874 bytes result sent to driver
+23/12/02 17:52:55 INFO TaskSetManager: Starting task 33.0 in stage 4.0 (TID 79) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 33, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:55 INFO TaskSetManager: Finished task 26.0 in stage 4.0 (TID 72) in 6858 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (24/43)
+23/12/02 17:52:55 INFO Executor: Running task 33.0 in stage 4.0 (TID 79)
+23/12/02 17:52:55 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4429185024-4563402752, partition values: [empty row]
+23/12/02 17:52:55 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4160749568-4294967296, partition values: [empty row]
+23/12/02 17:52:55 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4294967296-4429185024, partition values: [empty row]
+23/12/02 17:52:55 INFO Executor: Finished task 23.0 in stage 4.0 (TID 69). 1874 bytes result sent to driver
+23/12/02 17:52:55 INFO TaskSetManager: Starting task 34.0 in stage 4.0 (TID 80) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 34, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:55 INFO TaskSetManager: Finished task 23.0 in stage 4.0 (TID 69) in 7138 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (25/43)
+23/12/02 17:52:55 INFO Executor: Running task 34.0 in stage 4.0 (TID 80)
+23/12/02 17:52:56 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4563402752-4697620480, partition values: [empty row]
+23/12/02 17:52:56 INFO Executor: Finished task 21.0 in stage 4.0 (TID 67). 1874 bytes result sent to driver
+23/12/02 17:52:56 INFO Executor: Finished task 24.0 in stage 4.0 (TID 70). 1874 bytes result sent to driver
+23/12/02 17:52:56 INFO TaskSetManager: Starting task 35.0 in stage 4.0 (TID 81) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 35, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:56 INFO TaskSetManager: Finished task 21.0 in stage 4.0 (TID 67) in 7323 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (26/43)
+23/12/02 17:52:56 INFO Executor: Running task 35.0 in stage 4.0 (TID 81)
+23/12/02 17:52:56 INFO TaskSetManager: Starting task 36.0 in stage 4.0 (TID 82) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 36, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:56 INFO TaskSetManager: Finished task 24.0 in stage 4.0 (TID 70) in 7245 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (27/43)
+23/12/02 17:52:56 INFO Executor: Running task 36.0 in stage 4.0 (TID 82)
+23/12/02 17:52:56 INFO Executor: Finished task 27.0 in stage 4.0 (TID 73). 1874 bytes result sent to driver
+23/12/02 17:52:56 INFO TaskSetManager: Starting task 37.0 in stage 4.0 (TID 83) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 37, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:56 INFO Executor: Running task 37.0 in stage 4.0 (TID 83)
+23/12/02 17:52:56 INFO TaskSetManager: Finished task 27.0 in stage 4.0 (TID 73) in 6956 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (28/43)
+23/12/02 17:52:56 INFO Executor: Finished task 28.0 in stage 4.0 (TID 74). 1874 bytes result sent to driver
+23/12/02 17:52:56 INFO TaskSetManager: Starting task 38.0 in stage 4.0 (TID 84) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 38, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:56 INFO Executor: Running task 38.0 in stage 4.0 (TID 84)
+23/12/02 17:52:56 INFO TaskSetManager: Finished task 28.0 in stage 4.0 (TID 74) in 6871 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (29/43)
+23/12/02 17:52:56 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4831838208-4966055936, partition values: [empty row]
+23/12/02 17:52:56 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4697620480-4831838208, partition values: [empty row]
+23/12/02 17:52:56 INFO Executor: Finished task 29.0 in stage 4.0 (TID 75). 1874 bytes result sent to driver
+23/12/02 17:52:56 INFO TaskSetManager: Starting task 39.0 in stage 4.0 (TID 85) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 39, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:52:56 INFO TaskSetManager: Finished task 29.0 in stage 4.0 (TID 75) in 6777 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (30/43)
+23/12/02 17:52:56 INFO Executor: Running task 39.0 in stage 4.0 (TID 85)
+23/12/02 17:52:56 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4966055936-5100273664, partition values: [empty row]
+23/12/02 17:52:56 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5234491392-5368709120, partition values: [empty row]
+23/12/02 17:52:56 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5100273664-5234491392, partition values: [empty row]
+23/12/02 17:53:02 INFO Executor: Finished task 30.0 in stage 4.0 (TID 76). 1874 bytes result sent to driver
+23/12/02 17:53:02 INFO TaskSetManager: Starting task 40.0 in stage 4.0 (TID 86) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 40, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:02 INFO TaskSetManager: Finished task 30.0 in stage 4.0 (TID 76) in 6791 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (31/43)
+23/12/02 17:53:02 INFO Executor: Running task 40.0 in stage 4.0 (TID 86)
+23/12/02 17:53:02 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5368709120-5502926848, partition values: [empty row]
+23/12/02 17:53:02 INFO Executor: Finished task 31.0 in stage 4.0 (TID 77). 1874 bytes result sent to driver
+23/12/02 17:53:02 INFO Executor: Finished task 32.0 in stage 4.0 (TID 78). 1874 bytes result sent to driver
+23/12/02 17:53:02 INFO TaskSetManager: Starting task 41.0 in stage 4.0 (TID 87) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 41, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:02 INFO Executor: Running task 41.0 in stage 4.0 (TID 87)
+23/12/02 17:53:02 INFO TaskSetManager: Finished task 31.0 in stage 4.0 (TID 77) in 6698 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (32/43)
+23/12/02 17:53:02 INFO TaskSetManager: Starting task 42.0 in stage 4.0 (TID 88) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 42, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:02 INFO TaskSetManager: Finished task 32.0 in stage 4.0 (TID 78) in 6691 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (33/43)
+23/12/02 17:53:02 INFO Executor: Running task 42.0 in stage 4.0 (TID 88)
+23/12/02 17:53:02 INFO Executor: Finished task 33.0 in stage 4.0 (TID 79). 1874 bytes result sent to driver
+23/12/02 17:53:02 INFO TaskSetManager: Finished task 33.0 in stage 4.0 (TID 79) in 6684 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (34/43)
+23/12/02 17:53:02 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5502926848-5637144576, partition values: [empty row]
+23/12/02 17:53:02 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5637144576-5688115791, partition values: [empty row]
+23/12/02 17:53:02 INFO Executor: Finished task 34.0 in stage 4.0 (TID 80). 1874 bytes result sent to driver
+23/12/02 17:53:02 INFO TaskSetManager: Finished task 34.0 in stage 4.0 (TID 80) in 6650 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (35/43)
+23/12/02 17:53:02 INFO Executor: Finished task 39.0 in stage 4.0 (TID 85). 1874 bytes result sent to driver
+23/12/02 17:53:02 INFO TaskSetManager: Finished task 39.0 in stage 4.0 (TID 85) in 6610 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (36/43)
+23/12/02 17:53:02 INFO Executor: Finished task 37.0 in stage 4.0 (TID 83). 1874 bytes result sent to driver
+23/12/02 17:53:02 INFO TaskSetManager: Finished task 37.0 in stage 4.0 (TID 83) in 6688 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (37/43)
+23/12/02 17:53:02 INFO Executor: Finished task 35.0 in stage 4.0 (TID 81). 1874 bytes result sent to driver
+23/12/02 17:53:02 INFO TaskSetManager: Finished task 35.0 in stage 4.0 (TID 81) in 6719 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (38/43)
+23/12/02 17:53:02 INFO Executor: Finished task 38.0 in stage 4.0 (TID 84). 1874 bytes result sent to driver
+23/12/02 17:53:02 INFO TaskSetManager: Finished task 38.0 in stage 4.0 (TID 84) in 6851 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (39/43)
+23/12/02 17:53:03 INFO Executor: Finished task 36.0 in stage 4.0 (TID 82). 1874 bytes result sent to driver
+23/12/02 17:53:03 INFO TaskSetManager: Finished task 36.0 in stage 4.0 (TID 82) in 7201 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (40/43)
+23/12/02 17:53:04 INFO Executor: Finished task 42.0 in stage 4.0 (TID 88). 1874 bytes result sent to driver
+23/12/02 17:53:04 INFO TaskSetManager: Finished task 42.0 in stage 4.0 (TID 88) in 2181 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (41/43)
+23/12/02 17:53:07 INFO Executor: Finished task 40.0 in stage 4.0 (TID 86). 1874 bytes result sent to driver
+23/12/02 17:53:07 INFO TaskSetManager: Finished task 40.0 in stage 4.0 (TID 86) in 5434 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (42/43)
+23/12/02 17:53:07 INFO Executor: Finished task 41.0 in stage 4.0 (TID 87). 1874 bytes result sent to driver
+23/12/02 17:53:07 INFO TaskSetManager: Finished task 41.0 in stage 4.0 (TID 87) in 5379 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (43/43)
+23/12/02 17:53:07 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+23/12/02 17:53:07 INFO DAGScheduler: ShuffleMapStage 4 (treeAggregate at Statistics.scala:58) finished in 34.734 s
+23/12/02 17:53:07 INFO DAGScheduler: looking for newly runnable stages
+23/12/02 17:53:07 INFO DAGScheduler: running: Set()
+23/12/02 17:53:07 INFO DAGScheduler: waiting: Set(ResultStage 5)
+23/12/02 17:53:07 INFO DAGScheduler: failed: Set()
+23/12/02 17:53:07 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[22] at treeAggregate at Statistics.scala:58), which has no missing parents
+23/12/02 17:53:07 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 208.9 KiB, free 433.7 MiB)
+23/12/02 17:53:07 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 60.8 KiB, free 433.6 MiB)
+23/12/02 17:53:07 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 60.8 KiB, free: 434.2 MiB)
+23/12/02 17:53:07 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1513
+23/12/02 17:53:07 INFO DAGScheduler: Submitting 6 missing tasks from ResultStage 5 (MapPartitionsRDD[22] at treeAggregate at Statistics.scala:58) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5))
+23/12/02 17:53:07 INFO TaskSchedulerImpl: Adding task set 5.0 with 6 tasks resource profile 0
+23/12/02 17:53:07 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 89) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/12/02 17:53:07 INFO TaskSetManager: Starting task 1.0 in stage 5.0 (TID 90) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 1, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/12/02 17:53:07 INFO TaskSetManager: Starting task 2.0 in stage 5.0 (TID 91) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 2, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/12/02 17:53:07 INFO TaskSetManager: Starting task 3.0 in stage 5.0 (TID 92) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 3, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/12/02 17:53:07 INFO TaskSetManager: Starting task 4.0 in stage 5.0 (TID 93) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 4, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/12/02 17:53:07 INFO TaskSetManager: Starting task 5.0 in stage 5.0 (TID 94) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 5, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/12/02 17:53:07 INFO Executor: Running task 1.0 in stage 5.0 (TID 90)
+23/12/02 17:53:07 INFO Executor: Running task 2.0 in stage 5.0 (TID 91)
+23/12/02 17:53:07 INFO Executor: Running task 0.0 in stage 5.0 (TID 89)
+23/12/02 17:53:07 INFO Executor: Running task 4.0 in stage 5.0 (TID 93)
+23/12/02 17:53:07 INFO Executor: Running task 5.0 in stage 5.0 (TID 94)
+23/12/02 17:53:07 INFO Executor: Running task 3.0 in stage 5.0 (TID 92)
+23/12/02 17:53:07 INFO ShuffleBlockFetcherIterator: Getting 7 (33.0 KiB) non-empty blocks including 7 (33.0 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/12/02 17:53:07 INFO ShuffleBlockFetcherIterator: Getting 7 (33.0 KiB) non-empty blocks including 7 (33.0 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/12/02 17:53:07 INFO ShuffleBlockFetcherIterator: Getting 8 (37.7 KiB) non-empty blocks including 8 (37.7 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/12/02 17:53:07 INFO ShuffleBlockFetcherIterator: Getting 7 (33.0 KiB) non-empty blocks including 7 (33.0 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/12/02 17:53:07 INFO ShuffleBlockFetcherIterator: Getting 7 (33.0 KiB) non-empty blocks including 7 (33.0 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/12/02 17:53:07 INFO ShuffleBlockFetcherIterator: Getting 7 (33.0 KiB) non-empty blocks including 7 (33.0 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/12/02 17:53:07 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 15 ms
+23/12/02 17:53:07 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 15 ms
+23/12/02 17:53:07 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 15 ms
+23/12/02 17:53:07 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 15 ms
+23/12/02 17:53:07 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 15 ms
+23/12/02 17:53:07 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 15 ms
+23/12/02 17:53:08 INFO Executor: Finished task 4.0 in stage 5.0 (TID 93). 8967 bytes result sent to driver
+23/12/02 17:53:08 INFO Executor: Finished task 2.0 in stage 5.0 (TID 91). 8967 bytes result sent to driver
+23/12/02 17:53:08 INFO Executor: Finished task 0.0 in stage 5.0 (TID 89). 8967 bytes result sent to driver
+23/12/02 17:53:08 INFO Executor: Finished task 5.0 in stage 5.0 (TID 94). 8967 bytes result sent to driver
+23/12/02 17:53:08 INFO Executor: Finished task 1.0 in stage 5.0 (TID 90). 8967 bytes result sent to driver
+23/12/02 17:53:08 INFO Executor: Finished task 3.0 in stage 5.0 (TID 92). 8967 bytes result sent to driver
+23/12/02 17:53:08 INFO TaskSetManager: Finished task 4.0 in stage 5.0 (TID 93) in 71 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (1/6)
+23/12/02 17:53:08 INFO TaskSetManager: Finished task 2.0 in stage 5.0 (TID 91) in 72 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (2/6)
+23/12/02 17:53:08 INFO TaskSetManager: Finished task 3.0 in stage 5.0 (TID 92) in 72 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (3/6)
+23/12/02 17:53:08 INFO TaskSetManager: Finished task 5.0 in stage 5.0 (TID 94) in 72 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (4/6)
+23/12/02 17:53:08 INFO TaskSetManager: Finished task 1.0 in stage 5.0 (TID 90) in 74 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (5/6)
+23/12/02 17:53:08 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 89) in 75 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (6/6)
+23/12/02 17:53:08 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+23/12/02 17:53:08 INFO DAGScheduler: ResultStage 5 (treeAggregate at Statistics.scala:58) finished in 0.089 s
+23/12/02 17:53:08 INFO DAGScheduler: Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+23/12/02 17:53:08 INFO TaskSchedulerImpl: Killing all running tasks in stage 5: Stage finished
+23/12/02 17:53:08 INFO DAGScheduler: Job 4 finished: treeAggregate at Statistics.scala:58, took 34.859837 s
+23/12/02 17:53:08 INFO SparkContext: Starting job: isEmpty at RowMatrix.scala:441
+23/12/02 17:53:08 INFO DAGScheduler: Got job 5 (isEmpty at RowMatrix.scala:441) with 1 output partitions
+23/12/02 17:53:08 INFO DAGScheduler: Final stage: ResultStage 6 (isEmpty at RowMatrix.scala:441)
+23/12/02 17:53:08 INFO DAGScheduler: Parents of final stage: List()
+23/12/02 17:53:08 INFO DAGScheduler: Missing parents: List()
+23/12/02 17:53:08 INFO DAGScheduler: Submitting ResultStage 6 (MapPartitionsRDD[23] at filter at RowMatrix.scala:441), which has no missing parents
+23/12/02 17:53:08 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 203.9 KiB, free 433.4 MiB)
+23/12/02 17:53:08 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 58.2 KiB, free 433.4 MiB)
+23/12/02 17:53:08 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 58.2 KiB, free: 434.2 MiB)
+23/12/02 17:53:08 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1513
+23/12/02 17:53:08 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (MapPartitionsRDD[23] at filter at RowMatrix.scala:441) (first 15 tasks are for partitions Vector(0))
+23/12/02 17:53:08 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks resource profile 0
+23/12/02 17:53:08 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 95) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 0, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:53:08 INFO Executor: Running task 0.0 in stage 6.0 (TID 95)
+23/12/02 17:53:08 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 0-134217728, partition values: [empty row]
+23/12/02 17:53:08 INFO Executor: Finished task 0.0 in stage 6.0 (TID 95). 4772 bytes result sent to driver
+23/12/02 17:53:08 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 95) in 91 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (1/1)
+23/12/02 17:53:08 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+23/12/02 17:53:08 INFO DAGScheduler: ResultStage 6 (isEmpty at RowMatrix.scala:441) finished in 0.099 s
+23/12/02 17:53:08 INFO DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+23/12/02 17:53:08 INFO TaskSchedulerImpl: Killing all running tasks in stage 6: Stage finished
+23/12/02 17:53:08 INFO DAGScheduler: Job 5 finished: isEmpty at RowMatrix.scala:441, took 0.101430 s
+23/12/02 17:53:08 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 3.1 KiB, free 433.4 MiB)
+23/12/02 17:53:08 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 3.1 KiB, free 433.4 MiB)
+23/12/02 17:53:08 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 3.1 KiB, free: 434.2 MiB)
+23/12/02 17:53:08 INFO SparkContext: Created broadcast 10 from broadcast at RowMatrix.scala:165
+23/12/02 17:53:08 INFO SparkContext: Starting job: treeAggregate at RowMatrix.scala:171
+23/12/02 17:53:08 INFO DAGScheduler: Registering RDD 25 (treeAggregate at RowMatrix.scala:171) as input to shuffle 1
+23/12/02 17:53:08 INFO DAGScheduler: Got job 6 (treeAggregate at RowMatrix.scala:171) with 6 output partitions
+23/12/02 17:53:08 INFO DAGScheduler: Final stage: ResultStage 8 (treeAggregate at RowMatrix.scala:171)
+23/12/02 17:53:08 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 7)
+23/12/02 17:53:08 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 7)
+23/12/02 17:53:08 INFO DAGScheduler: Submitting ShuffleMapStage 7 (MapPartitionsRDD[25] at treeAggregate at RowMatrix.scala:171), which has no missing parents
+23/12/02 17:53:08 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 206.4 KiB, free 433.2 MiB)
+23/12/02 17:53:08 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 59.8 KiB, free 433.1 MiB)
+23/12/02 17:53:08 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 59.8 KiB, free: 434.1 MiB)
+23/12/02 17:53:08 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1513
+23/12/02 17:53:08 INFO DAGScheduler: Submitting 43 missing tasks from ShuffleMapStage 7 (MapPartitionsRDD[25] at treeAggregate at RowMatrix.scala:171) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+23/12/02 17:53:08 INFO TaskSchedulerImpl: Adding task set 7.0 with 43 tasks resource profile 0
+23/12/02 17:53:08 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 96) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 0, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:08 INFO TaskSetManager: Starting task 1.0 in stage 7.0 (TID 97) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 1, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:08 INFO TaskSetManager: Starting task 2.0 in stage 7.0 (TID 98) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 2, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:08 INFO TaskSetManager: Starting task 3.0 in stage 7.0 (TID 99) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 3, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:08 INFO TaskSetManager: Starting task 4.0 in stage 7.0 (TID 100) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 4, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:08 INFO TaskSetManager: Starting task 5.0 in stage 7.0 (TID 101) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 5, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:08 INFO TaskSetManager: Starting task 6.0 in stage 7.0 (TID 102) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 6, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:08 INFO TaskSetManager: Starting task 7.0 in stage 7.0 (TID 103) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 7, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:08 INFO TaskSetManager: Starting task 8.0 in stage 7.0 (TID 104) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 8, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:08 INFO TaskSetManager: Starting task 9.0 in stage 7.0 (TID 105) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 9, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:08 INFO Executor: Running task 1.0 in stage 7.0 (TID 97)
+23/12/02 17:53:08 INFO Executor: Running task 4.0 in stage 7.0 (TID 100)
+23/12/02 17:53:08 INFO Executor: Running task 5.0 in stage 7.0 (TID 101)
+23/12/02 17:53:08 INFO Executor: Running task 6.0 in stage 7.0 (TID 102)
+23/12/02 17:53:08 INFO Executor: Running task 8.0 in stage 7.0 (TID 104)
+23/12/02 17:53:08 INFO Executor: Running task 7.0 in stage 7.0 (TID 103)
+23/12/02 17:53:08 INFO Executor: Running task 9.0 in stage 7.0 (TID 105)
+23/12/02 17:53:08 INFO Executor: Running task 3.0 in stage 7.0 (TID 99)
+23/12/02 17:53:08 INFO Executor: Running task 2.0 in stage 7.0 (TID 98)
+23/12/02 17:53:08 INFO Executor: Running task 0.0 in stage 7.0 (TID 96)
+23/12/02 17:53:08 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1073741824-1207959552, partition values: [empty row]
+23/12/02 17:53:08 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 402653184-536870912, partition values: [empty row]
+23/12/02 17:53:08 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 134217728-268435456, partition values: [empty row]
+23/12/02 17:53:08 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 939524096-1073741824, partition values: [empty row]
+23/12/02 17:53:08 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 268435456-402653184, partition values: [empty row]
+23/12/02 17:53:08 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 536870912-671088640, partition values: [empty row]
+23/12/02 17:53:08 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 0-134217728, partition values: [empty row]
+23/12/02 17:53:08 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1207959552-1342177280, partition values: [empty row]
+23/12/02 17:53:08 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 805306368-939524096, partition values: [empty row]
+23/12/02 17:53:08 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 671088640-805306368, partition values: [empty row]
+23/12/02 17:53:08 INFO BlockManagerInfo: Removed broadcast_8_piece0 on p-sc-2348.2e.hpc.psu.edu:46407 in memory (size: 60.8 KiB, free: 434.2 MiB)
+23/12/02 17:53:08 INFO BlockManagerInfo: Removed broadcast_9_piece0 on p-sc-2348.2e.hpc.psu.edu:46407 in memory (size: 58.2 KiB, free: 434.2 MiB)
+23/12/02 17:53:09 WARN InstanceBuilder$NativeBLAS: Failed to load implementation from:dev.ludovic.netlib.blas.JNIBLAS
+23/12/02 17:53:09 WARN InstanceBuilder$NativeBLAS: Failed to load implementation from:dev.ludovic.netlib.blas.ForeignLinkerBLAS
+23/12/02 17:53:19 INFO Executor: Finished task 4.0 in stage 7.0 (TID 100). 1874 bytes result sent to driver
+23/12/02 17:53:19 INFO TaskSetManager: Starting task 10.0 in stage 7.0 (TID 106) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 10, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:19 INFO TaskSetManager: Finished task 4.0 in stage 7.0 (TID 100) in 11350 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (1/43)
+23/12/02 17:53:19 INFO Executor: Running task 10.0 in stage 7.0 (TID 106)
+23/12/02 17:53:19 INFO Executor: Finished task 0.0 in stage 7.0 (TID 96). 1874 bytes result sent to driver
+23/12/02 17:53:19 INFO TaskSetManager: Starting task 11.0 in stage 7.0 (TID 107) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 11, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:19 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 96) in 11377 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (2/43)
+23/12/02 17:53:19 INFO Executor: Running task 11.0 in stage 7.0 (TID 107)
+23/12/02 17:53:19 INFO Executor: Finished task 2.0 in stage 7.0 (TID 98). 1874 bytes result sent to driver
+23/12/02 17:53:19 INFO TaskSetManager: Starting task 12.0 in stage 7.0 (TID 108) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 12, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:19 INFO Executor: Running task 12.0 in stage 7.0 (TID 108)
+23/12/02 17:53:19 INFO TaskSetManager: Finished task 2.0 in stage 7.0 (TID 98) in 11409 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (3/43)
+23/12/02 17:53:19 INFO Executor: Finished task 6.0 in stage 7.0 (TID 102). 1874 bytes result sent to driver
+23/12/02 17:53:19 INFO TaskSetManager: Starting task 13.0 in stage 7.0 (TID 109) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 13, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:19 INFO TaskSetManager: Finished task 6.0 in stage 7.0 (TID 102) in 11415 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (4/43)
+23/12/02 17:53:19 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1342177280-1476395008, partition values: [empty row]
+23/12/02 17:53:19 INFO Executor: Running task 13.0 in stage 7.0 (TID 109)
+23/12/02 17:53:19 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1476395008-1610612736, partition values: [empty row]
+23/12/02 17:53:19 INFO Executor: Finished task 1.0 in stage 7.0 (TID 97). 1874 bytes result sent to driver
+23/12/02 17:53:19 INFO TaskSetManager: Starting task 14.0 in stage 7.0 (TID 110) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 14, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:19 INFO TaskSetManager: Finished task 1.0 in stage 7.0 (TID 97) in 11445 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (5/43)
+23/12/02 17:53:19 INFO Executor: Running task 14.0 in stage 7.0 (TID 110)
+23/12/02 17:53:19 INFO Executor: Finished task 9.0 in stage 7.0 (TID 105). 1874 bytes result sent to driver
+23/12/02 17:53:19 INFO TaskSetManager: Starting task 15.0 in stage 7.0 (TID 111) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 15, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:19 INFO Executor: Finished task 8.0 in stage 7.0 (TID 104). 1874 bytes result sent to driver
+23/12/02 17:53:19 INFO Executor: Running task 15.0 in stage 7.0 (TID 111)
+23/12/02 17:53:19 INFO TaskSetManager: Finished task 9.0 in stage 7.0 (TID 105) in 11455 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (6/43)
+23/12/02 17:53:19 INFO TaskSetManager: Finished task 8.0 in stage 7.0 (TID 104) in 11456 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (7/43)
+23/12/02 17:53:19 INFO TaskSetManager: Starting task 16.0 in stage 7.0 (TID 112) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 16, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:19 INFO Executor: Running task 16.0 in stage 7.0 (TID 112)
+23/12/02 17:53:19 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1610612736-1744830464, partition values: [empty row]
+23/12/02 17:53:19 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1744830464-1879048192, partition values: [empty row]
+23/12/02 17:53:19 INFO Executor: Finished task 3.0 in stage 7.0 (TID 99). 1874 bytes result sent to driver
+23/12/02 17:53:19 INFO TaskSetManager: Starting task 17.0 in stage 7.0 (TID 113) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 17, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:19 INFO TaskSetManager: Finished task 3.0 in stage 7.0 (TID 99) in 11477 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (8/43)
+23/12/02 17:53:19 INFO Executor: Running task 17.0 in stage 7.0 (TID 113)
+23/12/02 17:53:19 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1879048192-2013265920, partition values: [empty row]
+23/12/02 17:53:19 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2013265920-2147483648, partition values: [empty row]
+23/12/02 17:53:19 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2147483648-2281701376, partition values: [empty row]
+23/12/02 17:53:19 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2281701376-2415919104, partition values: [empty row]
+23/12/02 17:53:19 INFO Executor: Finished task 5.0 in stage 7.0 (TID 101). 1874 bytes result sent to driver
+23/12/02 17:53:19 INFO TaskSetManager: Starting task 18.0 in stage 7.0 (TID 114) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 18, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:19 INFO Executor: Running task 18.0 in stage 7.0 (TID 114)
+23/12/02 17:53:19 INFO TaskSetManager: Finished task 5.0 in stage 7.0 (TID 101) in 11669 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (9/43)
+23/12/02 17:53:19 INFO BlockManagerInfo: Removed broadcast_7_piece0 on p-sc-2348.2e.hpc.psu.edu:46407 in memory (size: 60.1 KiB, free: 434.3 MiB)
+23/12/02 17:53:19 INFO Executor: Finished task 7.0 in stage 7.0 (TID 103). 1874 bytes result sent to driver
+23/12/02 17:53:19 INFO TaskSetManager: Starting task 19.0 in stage 7.0 (TID 115) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 19, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:19 INFO TaskSetManager: Finished task 7.0 in stage 7.0 (TID 103) in 11740 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (10/43)
+23/12/02 17:53:19 INFO Executor: Running task 19.0 in stage 7.0 (TID 115)
+23/12/02 17:53:20 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2415919104-2550136832, partition values: [empty row]
+23/12/02 17:53:20 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2550136832-2684354560, partition values: [empty row]
+23/12/02 17:53:30 INFO Executor: Finished task 16.0 in stage 7.0 (TID 112). 1874 bytes result sent to driver
+23/12/02 17:53:30 INFO TaskSetManager: Starting task 20.0 in stage 7.0 (TID 116) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 20, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:30 INFO TaskSetManager: Finished task 16.0 in stage 7.0 (TID 112) in 10451 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (11/43)
+23/12/02 17:53:30 INFO Executor: Running task 20.0 in stage 7.0 (TID 116)
+23/12/02 17:53:30 INFO Executor: Finished task 17.0 in stage 7.0 (TID 113). 1874 bytes result sent to driver
+23/12/02 17:53:30 INFO TaskSetManager: Starting task 21.0 in stage 7.0 (TID 117) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 21, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:30 INFO Executor: Running task 21.0 in stage 7.0 (TID 117)
+23/12/02 17:53:30 INFO TaskSetManager: Finished task 17.0 in stage 7.0 (TID 113) in 10490 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (12/43)
+23/12/02 17:53:30 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2684354560-2818572288, partition values: [empty row]
+23/12/02 17:53:30 INFO Executor: Finished task 12.0 in stage 7.0 (TID 108). 1874 bytes result sent to driver
+23/12/02 17:53:30 INFO TaskSetManager: Starting task 22.0 in stage 7.0 (TID 118) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 22, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:30 INFO TaskSetManager: Finished task 12.0 in stage 7.0 (TID 108) in 10566 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (13/43)
+23/12/02 17:53:30 INFO Executor: Running task 22.0 in stage 7.0 (TID 118)
+23/12/02 17:53:30 INFO Executor: Finished task 10.0 in stage 7.0 (TID 106). 1874 bytes result sent to driver
+23/12/02 17:53:30 INFO TaskSetManager: Starting task 23.0 in stage 7.0 (TID 119) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 23, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:30 INFO Executor: Running task 23.0 in stage 7.0 (TID 119)
+23/12/02 17:53:30 INFO TaskSetManager: Finished task 10.0 in stage 7.0 (TID 106) in 10647 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (14/43)
+23/12/02 17:53:30 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2952790016-3087007744, partition values: [empty row]
+23/12/02 17:53:30 INFO Executor: Finished task 11.0 in stage 7.0 (TID 107). 1874 bytes result sent to driver
+23/12/02 17:53:30 INFO TaskSetManager: Starting task 24.0 in stage 7.0 (TID 120) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 24, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:30 INFO TaskSetManager: Finished task 11.0 in stage 7.0 (TID 107) in 10657 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (15/43)
+23/12/02 17:53:30 INFO Executor: Running task 24.0 in stage 7.0 (TID 120)
+23/12/02 17:53:30 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3087007744-3221225472, partition values: [empty row]
+23/12/02 17:53:30 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 2818572288-2952790016, partition values: [empty row]
+23/12/02 17:53:30 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3221225472-3355443200, partition values: [empty row]
+23/12/02 17:53:30 INFO Executor: Finished task 18.0 in stage 7.0 (TID 114). 1874 bytes result sent to driver
+23/12/02 17:53:30 INFO TaskSetManager: Starting task 25.0 in stage 7.0 (TID 121) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 25, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:30 INFO TaskSetManager: Finished task 18.0 in stage 7.0 (TID 114) in 10445 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (16/43)
+23/12/02 17:53:30 INFO Executor: Running task 25.0 in stage 7.0 (TID 121)
+23/12/02 17:53:30 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3355443200-3489660928, partition values: [empty row]
+23/12/02 17:53:30 INFO Executor: Finished task 19.0 in stage 7.0 (TID 115). 1874 bytes result sent to driver
+23/12/02 17:53:30 INFO TaskSetManager: Starting task 26.0 in stage 7.0 (TID 122) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 26, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:30 INFO TaskSetManager: Finished task 19.0 in stage 7.0 (TID 115) in 10533 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (17/43)
+23/12/02 17:53:30 INFO Executor: Running task 26.0 in stage 7.0 (TID 122)
+23/12/02 17:53:30 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3489660928-3623878656, partition values: [empty row]
+23/12/02 17:53:30 INFO Executor: Finished task 14.0 in stage 7.0 (TID 110). 1874 bytes result sent to driver
+23/12/02 17:53:30 INFO TaskSetManager: Starting task 27.0 in stage 7.0 (TID 123) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 27, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:30 INFO Executor: Running task 27.0 in stage 7.0 (TID 123)
+23/12/02 17:53:30 INFO TaskSetManager: Finished task 14.0 in stage 7.0 (TID 110) in 10900 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (18/43)
+23/12/02 17:53:30 INFO Executor: Finished task 13.0 in stage 7.0 (TID 109). 1874 bytes result sent to driver
+23/12/02 17:53:30 INFO TaskSetManager: Starting task 28.0 in stage 7.0 (TID 124) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 28, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:30 INFO TaskSetManager: Finished task 13.0 in stage 7.0 (TID 109) in 10995 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (19/43)
+23/12/02 17:53:30 INFO Executor: Running task 28.0 in stage 7.0 (TID 124)
+23/12/02 17:53:30 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3623878656-3758096384, partition values: [empty row]
+23/12/02 17:53:30 INFO Executor: Finished task 15.0 in stage 7.0 (TID 111). 1874 bytes result sent to driver
+23/12/02 17:53:30 INFO TaskSetManager: Starting task 29.0 in stage 7.0 (TID 125) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 29, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:30 INFO TaskSetManager: Finished task 15.0 in stage 7.0 (TID 111) in 10990 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (20/43)
+23/12/02 17:53:30 INFO Executor: Running task 29.0 in stage 7.0 (TID 125)
+23/12/02 17:53:30 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3758096384-3892314112, partition values: [empty row]
+23/12/02 17:53:30 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 3892314112-4026531840, partition values: [empty row]
+23/12/02 17:53:40 INFO Executor: Finished task 22.0 in stage 7.0 (TID 118). 1874 bytes result sent to driver
+23/12/02 17:53:40 INFO TaskSetManager: Starting task 30.0 in stage 7.0 (TID 126) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 30, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:40 INFO TaskSetManager: Finished task 22.0 in stage 7.0 (TID 118) in 10311 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (21/43)
+23/12/02 17:53:40 INFO Executor: Running task 30.0 in stage 7.0 (TID 126)
+23/12/02 17:53:40 INFO Executor: Finished task 20.0 in stage 7.0 (TID 116). 1874 bytes result sent to driver
+23/12/02 17:53:40 INFO TaskSetManager: Starting task 31.0 in stage 7.0 (TID 127) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 31, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:40 INFO TaskSetManager: Finished task 20.0 in stage 7.0 (TID 116) in 10466 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (22/43)
+23/12/02 17:53:40 INFO Executor: Running task 31.0 in stage 7.0 (TID 127)
+23/12/02 17:53:40 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4026531840-4160749568, partition values: [empty row]
+23/12/02 17:53:40 INFO Executor: Finished task 23.0 in stage 7.0 (TID 119). 1874 bytes result sent to driver
+23/12/02 17:53:40 INFO TaskSetManager: Starting task 32.0 in stage 7.0 (TID 128) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 32, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:40 INFO TaskSetManager: Finished task 23.0 in stage 7.0 (TID 119) in 10421 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (23/43)
+23/12/02 17:53:40 INFO Executor: Running task 32.0 in stage 7.0 (TID 128)
+23/12/02 17:53:40 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4160749568-4294967296, partition values: [empty row]
+23/12/02 17:53:40 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4294967296-4429185024, partition values: [empty row]
+23/12/02 17:53:40 INFO Executor: Finished task 25.0 in stage 7.0 (TID 121). 1874 bytes result sent to driver
+23/12/02 17:53:40 INFO TaskSetManager: Starting task 33.0 in stage 7.0 (TID 129) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 33, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:40 INFO TaskSetManager: Finished task 25.0 in stage 7.0 (TID 121) in 10450 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (24/43)
+23/12/02 17:53:40 INFO Executor: Running task 33.0 in stage 7.0 (TID 129)
+23/12/02 17:53:40 INFO Executor: Finished task 27.0 in stage 7.0 (TID 123). 1874 bytes result sent to driver
+23/12/02 17:53:40 INFO TaskSetManager: Starting task 34.0 in stage 7.0 (TID 130) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 34, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:40 INFO TaskSetManager: Finished task 27.0 in stage 7.0 (TID 123) in 10267 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (25/43)
+23/12/02 17:53:40 INFO Executor: Running task 34.0 in stage 7.0 (TID 130)
+23/12/02 17:53:40 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4429185024-4563402752, partition values: [empty row]
+23/12/02 17:53:40 INFO Executor: Finished task 26.0 in stage 7.0 (TID 122). 1874 bytes result sent to driver
+23/12/02 17:53:40 INFO TaskSetManager: Starting task 35.0 in stage 7.0 (TID 131) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 35, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:40 INFO TaskSetManager: Finished task 26.0 in stage 7.0 (TID 122) in 10405 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (26/43)
+23/12/02 17:53:40 INFO Executor: Running task 35.0 in stage 7.0 (TID 131)
+23/12/02 17:53:40 INFO Executor: Finished task 24.0 in stage 7.0 (TID 120). 1874 bytes result sent to driver
+23/12/02 17:53:40 INFO TaskSetManager: Starting task 36.0 in stage 7.0 (TID 132) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 36, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:40 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4563402752-4697620480, partition values: [empty row]
+23/12/02 17:53:40 INFO TaskSetManager: Finished task 24.0 in stage 7.0 (TID 120) in 10650 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (27/43)
+23/12/02 17:53:40 INFO Executor: Running task 36.0 in stage 7.0 (TID 132)
+23/12/02 17:53:40 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4697620480-4831838208, partition values: [empty row]
+23/12/02 17:53:40 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4831838208-4966055936, partition values: [empty row]
+23/12/02 17:53:41 INFO Executor: Finished task 28.0 in stage 7.0 (TID 124). 1874 bytes result sent to driver
+23/12/02 17:53:41 INFO TaskSetManager: Starting task 37.0 in stage 7.0 (TID 133) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 37, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:41 INFO TaskSetManager: Finished task 28.0 in stage 7.0 (TID 124) in 10494 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (28/43)
+23/12/02 17:53:41 INFO Executor: Running task 37.0 in stage 7.0 (TID 133)
+23/12/02 17:53:41 INFO Executor: Finished task 29.0 in stage 7.0 (TID 125). 1874 bytes result sent to driver
+23/12/02 17:53:41 INFO TaskSetManager: Starting task 38.0 in stage 7.0 (TID 134) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 38, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:41 INFO TaskSetManager: Finished task 29.0 in stage 7.0 (TID 125) in 10461 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (29/43)
+23/12/02 17:53:41 INFO Executor: Running task 38.0 in stage 7.0 (TID 134)
+23/12/02 17:53:41 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5100273664-5234491392, partition values: [empty row]
+23/12/02 17:53:41 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 4966055936-5100273664, partition values: [empty row]
+23/12/02 17:53:41 INFO Executor: Finished task 21.0 in stage 7.0 (TID 117). 1874 bytes result sent to driver
+23/12/02 17:53:41 INFO TaskSetManager: Starting task 39.0 in stage 7.0 (TID 135) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 39, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:41 INFO TaskSetManager: Finished task 21.0 in stage 7.0 (TID 117) in 11080 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (30/43)
+23/12/02 17:53:41 INFO Executor: Running task 39.0 in stage 7.0 (TID 135)
+23/12/02 17:53:41 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5234491392-5368709120, partition values: [empty row]
+23/12/02 17:53:51 INFO Executor: Finished task 30.0 in stage 7.0 (TID 126). 1874 bytes result sent to driver
+23/12/02 17:53:51 INFO TaskSetManager: Starting task 40.0 in stage 7.0 (TID 136) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 40, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:51 INFO TaskSetManager: Finished task 30.0 in stage 7.0 (TID 126) in 10475 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (31/43)
+23/12/02 17:53:51 INFO Executor: Running task 40.0 in stage 7.0 (TID 136)
+23/12/02 17:53:51 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5368709120-5502926848, partition values: [empty row]
+23/12/02 17:53:51 INFO Executor: Finished task 33.0 in stage 7.0 (TID 129). 1874 bytes result sent to driver
+23/12/02 17:53:51 INFO TaskSetManager: Starting task 41.0 in stage 7.0 (TID 137) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 41, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:51 INFO Executor: Running task 41.0 in stage 7.0 (TID 137)
+23/12/02 17:53:51 INFO TaskSetManager: Finished task 33.0 in stage 7.0 (TID 129) in 10387 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (32/43)
+23/12/02 17:53:51 INFO Executor: Finished task 32.0 in stage 7.0 (TID 128). 1874 bytes result sent to driver
+23/12/02 17:53:51 INFO TaskSetManager: Starting task 42.0 in stage 7.0 (TID 138) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 42, PROCESS_LOCAL, 4911 bytes) taskResourceAssignments Map()
+23/12/02 17:53:51 INFO TaskSetManager: Finished task 32.0 in stage 7.0 (TID 128) in 10541 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (33/43)
+23/12/02 17:53:51 INFO Executor: Running task 42.0 in stage 7.0 (TID 138)
+23/12/02 17:53:51 INFO Executor: Finished task 31.0 in stage 7.0 (TID 127). 1874 bytes result sent to driver
+23/12/02 17:53:51 INFO TaskSetManager: Finished task 31.0 in stage 7.0 (TID 127) in 10591 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (34/43)
+23/12/02 17:53:51 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5502926848-5637144576, partition values: [empty row]
+23/12/02 17:53:51 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 5637144576-5688115791, partition values: [empty row]
+23/12/02 17:53:51 INFO Executor: Finished task 34.0 in stage 7.0 (TID 130). 1874 bytes result sent to driver
+23/12/02 17:53:51 INFO TaskSetManager: Finished task 34.0 in stage 7.0 (TID 130) in 10572 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (35/43)
+23/12/02 17:53:51 INFO Executor: Finished task 35.0 in stage 7.0 (TID 131). 1874 bytes result sent to driver
+23/12/02 17:53:51 INFO TaskSetManager: Finished task 35.0 in stage 7.0 (TID 131) in 10546 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (36/43)
+23/12/02 17:53:51 INFO Executor: Finished task 36.0 in stage 7.0 (TID 132). 1874 bytes result sent to driver
+23/12/02 17:53:51 INFO TaskSetManager: Finished task 36.0 in stage 7.0 (TID 132) in 10555 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (37/43)
+23/12/02 17:53:51 INFO Executor: Finished task 38.0 in stage 7.0 (TID 134). 1874 bytes result sent to driver
+23/12/02 17:53:51 INFO TaskSetManager: Finished task 38.0 in stage 7.0 (TID 134) in 10342 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (38/43)
+23/12/02 17:53:51 INFO Executor: Finished task 37.0 in stage 7.0 (TID 133). 1874 bytes result sent to driver
+23/12/02 17:53:51 INFO TaskSetManager: Finished task 37.0 in stage 7.0 (TID 133) in 10546 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (39/43)
+23/12/02 17:53:52 INFO Executor: Finished task 39.0 in stage 7.0 (TID 135). 1874 bytes result sent to driver
+23/12/02 17:53:52 INFO TaskSetManager: Finished task 39.0 in stage 7.0 (TID 135) in 10781 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (40/43)
+23/12/02 17:53:54 INFO Executor: Finished task 42.0 in stage 7.0 (TID 138). 1874 bytes result sent to driver
+23/12/02 17:53:54 INFO TaskSetManager: Finished task 42.0 in stage 7.0 (TID 138) in 3669 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (41/43)
+23/12/02 17:54:00 INFO Executor: Finished task 40.0 in stage 7.0 (TID 136). 1874 bytes result sent to driver
+23/12/02 17:54:00 INFO TaskSetManager: Finished task 40.0 in stage 7.0 (TID 136) in 9261 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (42/43)
+23/12/02 17:54:00 INFO Executor: Finished task 41.0 in stage 7.0 (TID 137). 1874 bytes result sent to driver
+23/12/02 17:54:00 INFO TaskSetManager: Finished task 41.0 in stage 7.0 (TID 137) in 9203 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (43/43)
+23/12/02 17:54:00 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+23/12/02 17:54:00 INFO DAGScheduler: ShuffleMapStage 7 (treeAggregate at RowMatrix.scala:171) finished in 52.161 s
+23/12/02 17:54:00 INFO DAGScheduler: looking for newly runnable stages
+23/12/02 17:54:00 INFO DAGScheduler: running: Set()
+23/12/02 17:54:00 INFO DAGScheduler: waiting: Set(ResultStage 8)
+23/12/02 17:54:00 INFO DAGScheduler: failed: Set()
+23/12/02 17:54:00 INFO DAGScheduler: Submitting ResultStage 8 (MapPartitionsRDD[27] at treeAggregate at RowMatrix.scala:171), which has no missing parents
+23/12/02 17:54:00 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 207.4 KiB, free 433.7 MiB)
+23/12/02 17:54:00 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 60.3 KiB, free 433.6 MiB)
+23/12/02 17:54:00 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 60.3 KiB, free: 434.2 MiB)
+23/12/02 17:54:00 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1513
+23/12/02 17:54:00 INFO DAGScheduler: Submitting 6 missing tasks from ResultStage 8 (MapPartitionsRDD[27] at treeAggregate at RowMatrix.scala:171) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5))
+23/12/02 17:54:00 INFO TaskSchedulerImpl: Adding task set 8.0 with 6 tasks resource profile 0
+23/12/02 17:54:00 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 139) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/12/02 17:54:00 INFO TaskSetManager: Starting task 1.0 in stage 8.0 (TID 140) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 1, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/12/02 17:54:00 INFO TaskSetManager: Starting task 2.0 in stage 8.0 (TID 141) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 2, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/12/02 17:54:00 INFO TaskSetManager: Starting task 3.0 in stage 8.0 (TID 142) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 3, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/12/02 17:54:00 INFO TaskSetManager: Starting task 4.0 in stage 8.0 (TID 143) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 4, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/12/02 17:54:00 INFO TaskSetManager: Starting task 5.0 in stage 8.0 (TID 144) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 5, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/12/02 17:54:00 INFO Executor: Running task 0.0 in stage 8.0 (TID 139)
+23/12/02 17:54:00 INFO Executor: Running task 1.0 in stage 8.0 (TID 140)
+23/12/02 17:54:00 INFO Executor: Running task 4.0 in stage 8.0 (TID 143)
+23/12/02 17:54:00 INFO Executor: Running task 5.0 in stage 8.0 (TID 144)
+23/12/02 17:54:00 INFO Executor: Running task 2.0 in stage 8.0 (TID 141)
+23/12/02 17:54:00 INFO Executor: Running task 3.0 in stage 8.0 (TID 142)
+23/12/02 17:54:00 INFO ShuffleBlockFetcherIterator: Getting 7 (4.2 MiB) non-empty blocks including 7 (4.2 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/12/02 17:54:00 INFO ShuffleBlockFetcherIterator: Getting 7 (4.2 MiB) non-empty blocks including 7 (4.2 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/12/02 17:54:00 INFO ShuffleBlockFetcherIterator: Getting 7 (4.2 MiB) non-empty blocks including 7 (4.2 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/12/02 17:54:00 INFO ShuffleBlockFetcherIterator: Getting 7 (4.2 MiB) non-empty blocks including 7 (4.2 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/12/02 17:54:00 INFO ShuffleBlockFetcherIterator: Getting 8 (4.8 MiB) non-empty blocks including 8 (4.8 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/12/02 17:54:00 INFO ShuffleBlockFetcherIterator: Getting 7 (4.2 MiB) non-empty blocks including 7 (4.2 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/12/02 17:54:00 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+23/12/02 17:54:00 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+23/12/02 17:54:00 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+23/12/02 17:54:00 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+23/12/02 17:54:00 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+23/12/02 17:54:00 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+23/12/02 17:54:00 INFO Executor: Finished task 3.0 in stage 8.0 (TID 142). 627544 bytes result sent to driver
+23/12/02 17:54:00 INFO TaskSetManager: Finished task 3.0 in stage 8.0 (TID 142) in 64 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (1/6)
+23/12/02 17:54:00 INFO Executor: Finished task 2.0 in stage 8.0 (TID 141). 627544 bytes result sent to driver
+23/12/02 17:54:00 INFO Executor: Finished task 4.0 in stage 8.0 (TID 143). 627544 bytes result sent to driver
+23/12/02 17:54:00 INFO TaskSetManager: Finished task 2.0 in stage 8.0 (TID 141) in 66 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (2/6)
+23/12/02 17:54:00 INFO Executor: Finished task 5.0 in stage 8.0 (TID 144). 627544 bytes result sent to driver
+23/12/02 17:54:00 INFO TaskSetManager: Finished task 4.0 in stage 8.0 (TID 143) in 67 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (3/6)
+23/12/02 17:54:00 INFO Executor: Finished task 1.0 in stage 8.0 (TID 140). 627544 bytes result sent to driver
+23/12/02 17:54:00 INFO TaskSetManager: Finished task 5.0 in stage 8.0 (TID 144) in 67 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (4/6)
+23/12/02 17:54:00 INFO Executor: Finished task 0.0 in stage 8.0 (TID 139). 627544 bytes result sent to driver
+23/12/02 17:54:00 INFO TaskSetManager: Finished task 1.0 in stage 8.0 (TID 140) in 68 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (5/6)
+23/12/02 17:54:00 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 139) in 69 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (6/6)
+23/12/02 17:54:00 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+23/12/02 17:54:00 INFO DAGScheduler: ResultStage 8 (treeAggregate at RowMatrix.scala:171) finished in 0.079 s
+23/12/02 17:54:00 INFO DAGScheduler: Job 6 is finished. Cancelling potential speculative or zombie tasks for this job
+23/12/02 17:54:00 INFO TaskSchedulerImpl: Killing all running tasks in stage 8: Stage finished
+23/12/02 17:54:00 INFO DAGScheduler: Job 6 finished: treeAggregate at RowMatrix.scala:171, took 52.246638 s
+23/12/02 17:54:00 INFO TorrentBroadcast: Destroying Broadcast(10) (from destroy at RowMatrix.scala:201)
+23/12/02 17:54:00 INFO BlockManagerInfo: Removed broadcast_10_piece0 on p-sc-2348.2e.hpc.psu.edu:46407 in memory (size: 3.1 KiB, free: 434.2 MiB)
+23/12/02 17:54:00 INFO BlockManagerInfo: Removed broadcast_11_piece0 on p-sc-2348.2e.hpc.psu.edu:46407 in memory (size: 59.8 KiB, free: 434.3 MiB)
+23/12/02 17:54:00 WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeSystemLAPACK
+23/12/02 17:54:00 WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeRefLAPACK
+23/12/02 17:54:02 INFO FileSourceStrategy: Pushed Filters: 
+23/12/02 17:54:02 INFO FileSourceStrategy: Post-Scan Filters: atleastnnonnulls(397, Polygon_ID#17, acq_date#18, frp#19, Neighbour#20, Neighbour_frp#21, CBC2014_max#22, CBC2014_min#23, CBC2014_median#24, CBC2014_sum#25, CBC2014_mode#26, CBC2014_count#27, CBC2014_mean#28, CBD2012_max#29, CBD2012_min#30, CBD2012_median#31, CBD2012_sum#32, CBD2012_mode#33, CBD2012_count#34, CBD2012_mean#35, CBD2016_max#36, CBD2016_min#37, CBD2016_median#38, CBD2016_sum#39, ... 374 more fields)
+23/12/02 17:54:02 INFO FileSourceStrategy: Output Data Schema: struct<Polygon_ID: int, acq_date: timestamp, frp: double, Neighbour: int, Neighbour_frp: double ... 395 more fields>
+23/12/02 17:54:02 INFO BlockManagerInfo: Removed broadcast_12_piece0 on p-sc-2348.2e.hpc.psu.edu:46407 in memory (size: 60.3 KiB, free: 434.4 MiB)
+23/12/02 17:54:02 INFO FileSourceStrategy: Pushed Filters: 
+23/12/02 17:54:02 INFO FileSourceStrategy: Post-Scan Filters: atleastnnonnulls(397, Polygon_ID#17, acq_date#18, frp#19, Neighbour#20, Neighbour_frp#21, CBC2014_max#22, CBC2014_min#23, CBC2014_median#24, CBC2014_sum#25, CBC2014_mode#26, CBC2014_count#27, CBC2014_mean#28, CBD2012_max#29, CBD2012_min#30, CBD2012_median#31, CBD2012_sum#32, CBD2012_mode#33, CBD2012_count#34, CBD2012_mean#35, CBD2016_max#36, CBD2016_min#37, CBD2016_median#38, CBD2016_sum#39, ... 374 more fields)
+23/12/02 17:54:02 INFO FileSourceStrategy: Output Data Schema: struct<Polygon_ID: int, acq_date: timestamp, frp: double, Neighbour: int, Neighbour_frp: double ... 395 more fields>
+23/12/02 17:54:03 INFO CodeGenerator: Code generated in 10.046553 ms
+23/12/02 17:54:03 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 199.4 KiB, free 434.0 MiB)
+23/12/02 17:54:03 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 34.0 KiB, free 433.9 MiB)
+23/12/02 17:54:03 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 34.0 KiB, free: 434.3 MiB)
+23/12/02 17:54:03 INFO SparkContext: Created broadcast 13 from rdd at Predictor.scala:81
+23/12/02 17:54:03 INFO FileSourceScanExec: Planning scan with bin packing, max size: 134217728 bytes, open cost is considered as scanning 4194304 bytes.
+23/12/02 17:54:03 INFO Instrumentation: [30398775] Stage class: DecisionTreeRegressor
+23/12/02 17:54:03 INFO Instrumentation: [30398775] Stage uid: DecisionTreeRegressor_10b961935b3e
+23/12/02 17:54:03 INFO Instrumentation: [30398775] training: numPartitions=43 storageLevel=StorageLevel(1 replicas)
+23/12/02 17:54:03 INFO Instrumentation: [30398775] {"featuresCol":"pcaFeatures","labelCol":"frp","maxDepth":2,"minInstancesPerNode":2}
+23/12/02 17:54:03 INFO SparkContext: Starting job: take at DecisionTreeMetadata.scala:119
+23/12/02 17:54:03 INFO DAGScheduler: Got job 7 (take at DecisionTreeMetadata.scala:119) with 1 output partitions
+23/12/02 17:54:03 INFO DAGScheduler: Final stage: ResultStage 9 (take at DecisionTreeMetadata.scala:119)
+23/12/02 17:54:03 INFO DAGScheduler: Parents of final stage: List()
+23/12/02 17:54:03 INFO DAGScheduler: Missing parents: List()
+23/12/02 17:54:03 INFO DAGScheduler: Submitting ResultStage 9 (MapPartitionsRDD[46] at map at DecisionTreeMetadata.scala:119), which has no missing parents
+23/12/02 17:54:03 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 372.7 KiB, free 433.6 MiB)
+23/12/02 17:54:03 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 182.7 KiB, free 433.4 MiB)
+23/12/02 17:54:03 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 182.7 KiB, free: 434.2 MiB)
+23/12/02 17:54:03 INFO SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:1513
+23/12/02 17:54:03 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 9 (MapPartitionsRDD[46] at map at DecisionTreeMetadata.scala:119) (first 15 tasks are for partitions Vector(0))
+23/12/02 17:54:03 INFO TaskSchedulerImpl: Adding task set 9.0 with 1 tasks resource profile 0
+23/12/02 17:54:03 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 145) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 0, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:54:03 INFO Executor: Running task 0.0 in stage 9.0 (TID 145)
+23/12/02 17:54:03 INFO CodeGenerator: Code generated in 113.725972 ms
+23/12/02 17:54:03 INFO CodeGenerator: Code generated in 64.011516 ms
+23/12/02 17:54:03 INFO CodeGenerator: Code generated in 113.17082 ms
+23/12/02 17:54:03 INFO CodeGenerator: Code generated in 4.012544 ms
+23/12/02 17:54:03 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 0-134217728, partition values: [empty row]
+23/12/02 17:54:03 INFO CodeGenerator: Code generated in 4.30782 ms
+23/12/02 17:54:03 INFO CodeGenerator: Code generated in 5.814595 ms
+23/12/02 17:54:09 INFO BlockManagerInfo: Removed broadcast_4_piece0 on p-sc-2348.2e.hpc.psu.edu:46407 in memory (size: 34.0 KiB, free: 434.2 MiB)
+23/12/02 17:54:11 INFO UnifiedMemoryManager: Will not store rdd_36_0 as the required space (99196044 bytes) exceeds our memory limit (71725510 bytes)
+23/12/02 17:54:11 WARN MemoryStore: Not enough space to cache rdd_36_0 in memory! (computed 67.0 MiB so far)
+23/12/02 17:54:11 INFO MemoryStore: Memory use = 788.8 KiB (blocks) + 5.9 MiB (scratch space shared across 1 tasks(s)) = 6.7 MiB. Storage limit = 68.4 MiB.
+23/12/02 17:54:11 WARN BlockManager: Persisting block rdd_36_0 to disk instead.
+23/12/02 17:54:14 INFO BlockManagerInfo: Added rdd_36_0 on disk on p-sc-2348.2e.hpc.psu.edu:46407 (size: 70.9 MiB)
+23/12/02 17:54:14 INFO MemoryStore: Block rdd_36_0 stored as values in memory (estimated size 273.2 MiB, free 160.4 MiB)
+23/12/02 17:54:14 INFO CodeGenerator: Code generated in 3.62627 ms
+23/12/02 17:54:14 INFO CodeGenerator: Code generated in 12.598631 ms
+23/12/02 17:54:14 INFO CodeGenerator: Code generated in 4.360691 ms
+23/12/02 17:54:14 INFO Executor: 1 block locks were not released by task 0.0 in stage 9.0 (TID 145)
+[rdd_36_0]
+23/12/02 17:54:14 INFO Executor: Finished task 0.0 in stage 9.0 (TID 145). 1983 bytes result sent to driver
+23/12/02 17:54:14 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 145) in 11780 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (1/1)
+23/12/02 17:54:14 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+23/12/02 17:54:14 INFO DAGScheduler: ResultStage 9 (take at DecisionTreeMetadata.scala:119) finished in 11.789 s
+23/12/02 17:54:14 INFO DAGScheduler: Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+23/12/02 17:54:14 INFO TaskSchedulerImpl: Killing all running tasks in stage 9: Stage finished
+23/12/02 17:54:14 INFO DAGScheduler: Job 7 finished: take at DecisionTreeMetadata.scala:119, took 11.793945 s
+23/12/02 17:54:14 INFO SparkContext: Starting job: aggregate at DecisionTreeMetadata.scala:125
+23/12/02 17:54:14 INFO DAGScheduler: Got job 8 (aggregate at DecisionTreeMetadata.scala:125) with 43 output partitions
+23/12/02 17:54:14 INFO DAGScheduler: Final stage: ResultStage 10 (aggregate at DecisionTreeMetadata.scala:125)
+23/12/02 17:54:14 INFO DAGScheduler: Parents of final stage: List()
+23/12/02 17:54:14 INFO DAGScheduler: Missing parents: List()
+23/12/02 17:54:14 INFO DAGScheduler: Submitting ResultStage 10 (MapPartitionsRDD[45] at retag at RandomForest.scala:274), which has no missing parents
+23/12/02 17:54:14 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 372.7 KiB, free 160.0 MiB)
+23/12/02 17:54:14 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 182.0 KiB, free 159.9 MiB)
+23/12/02 17:54:14 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on p-sc-2348.2e.hpc.psu.edu:46407 (size: 182.0 KiB, free: 434.0 MiB)
+23/12/02 17:54:14 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1513
+23/12/02 17:54:14 INFO DAGScheduler: Submitting 43 missing tasks from ResultStage 10 (MapPartitionsRDD[45] at retag at RandomForest.scala:274) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+23/12/02 17:54:14 INFO TaskSchedulerImpl: Adding task set 10.0 with 43 tasks resource profile 0
+23/12/02 17:54:14 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 146) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 0, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:54:14 INFO TaskSetManager: Starting task 1.0 in stage 10.0 (TID 147) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 1, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:54:14 INFO TaskSetManager: Starting task 2.0 in stage 10.0 (TID 148) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 2, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:54:14 INFO TaskSetManager: Starting task 3.0 in stage 10.0 (TID 149) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 3, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:54:14 INFO TaskSetManager: Starting task 4.0 in stage 10.0 (TID 150) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 4, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:54:14 INFO TaskSetManager: Starting task 5.0 in stage 10.0 (TID 151) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 5, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:54:14 INFO TaskSetManager: Starting task 6.0 in stage 10.0 (TID 152) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 6, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:54:14 INFO TaskSetManager: Starting task 7.0 in stage 10.0 (TID 153) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 7, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:54:14 INFO TaskSetManager: Starting task 8.0 in stage 10.0 (TID 154) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 8, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:54:14 INFO TaskSetManager: Starting task 9.0 in stage 10.0 (TID 155) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 9, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:54:14 INFO Executor: Running task 1.0 in stage 10.0 (TID 147)
+23/12/02 17:54:14 INFO Executor: Running task 3.0 in stage 10.0 (TID 149)
+23/12/02 17:54:14 INFO Executor: Running task 0.0 in stage 10.0 (TID 146)
+23/12/02 17:54:14 INFO Executor: Running task 2.0 in stage 10.0 (TID 148)
+23/12/02 17:54:14 INFO Executor: Running task 7.0 in stage 10.0 (TID 153)
+23/12/02 17:54:14 INFO Executor: Running task 8.0 in stage 10.0 (TID 154)
+23/12/02 17:54:14 INFO Executor: Running task 9.0 in stage 10.0 (TID 155)
+23/12/02 17:54:14 INFO Executor: Running task 5.0 in stage 10.0 (TID 151)
+23/12/02 17:54:14 INFO Executor: Running task 4.0 in stage 10.0 (TID 150)
+23/12/02 17:54:14 INFO Executor: Running task 6.0 in stage 10.0 (TID 152)
+23/12/02 17:54:14 INFO BlockManager: Found block rdd_36_0 locally
+23/12/02 17:54:15 INFO Executor: Finished task 0.0 in stage 10.0 (TID 146). 2055 bytes result sent to driver
+23/12/02 17:54:15 INFO TaskSetManager: Starting task 10.0 in stage 10.0 (TID 156) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 10, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:54:15 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 146) in 146 ms on p-sc-2348.2e.hpc.psu.edu (executor driver) (1/43)
+23/12/02 17:54:15 INFO Executor: Running task 10.0 in stage 10.0 (TID 156)
+23/12/02 17:54:15 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 134217728-268435456, partition values: [empty row]
+23/12/02 17:54:15 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1073741824-1207959552, partition values: [empty row]
+23/12/02 17:54:15 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1207959552-1342177280, partition values: [empty row]
+23/12/02 17:54:15 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 939524096-1073741824, partition values: [empty row]
+23/12/02 17:54:15 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 671088640-805306368, partition values: [empty row]
+23/12/02 17:54:15 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 402653184-536870912, partition values: [empty row]
+23/12/02 17:54:15 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 805306368-939524096, partition values: [empty row]
+23/12/02 17:54:15 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 536870912-671088640, partition values: [empty row]
+23/12/02 17:54:15 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 268435456-402653184, partition values: [empty row]
+23/12/02 17:54:15 INFO FileScanRDD: Reading File path: file:///storage/work/sxs6549/Project/wildfiredb.csv, range: 1342177280-1476395008, partition values: [empty row]
+23/12/02 17:54:15 INFO BlockManagerInfo: Removed broadcast_14_piece0 on p-sc-2348.2e.hpc.psu.edu:46407 in memory (size: 182.7 KiB, free: 434.2 MiB)
+23/12/02 17:54:15 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 20.1 MiB to disk (0  time so far)
+23/12/02 17:54:15 INFO MemoryStore: 2 blocks selected for dropping (233.4 KiB bytes)
+23/12/02 17:54:15 INFO BlockManager: Dropping block broadcast_13_piece0 from memory
+23/12/02 17:54:15 INFO BlockManager: Writing block broadcast_13_piece0 to disk
+23/12/02 17:54:15 INFO BlockManagerInfo: Updated broadcast_13_piece0 on disk on p-sc-2348.2e.hpc.psu.edu:46407 (current size: 34.0 KiB, original size: 0.0 B)
+23/12/02 17:54:15 INFO BlockManager: Dropping block broadcast_13 from memory
+23/12/02 17:54:15 INFO BlockManager: Writing block broadcast_13 to disk
+23/12/02 17:54:15 INFO MemoryStore: After dropping 2 blocks, free memory is 299.0 KiB
+23/12/02 17:54:15 INFO MemoryStore: 2 blocks selected for dropping (273.4 MiB bytes)
+23/12/02 17:54:15 INFO BlockManager: Dropping block broadcast_15_piece0 from memory
+23/12/02 17:54:15 INFO BlockManager: Writing block broadcast_15_piece0 to disk
+23/12/02 17:54:15 INFO BlockManagerInfo: Updated broadcast_15_piece0 on disk on p-sc-2348.2e.hpc.psu.edu:46407 (current size: 182.0 KiB, original size: 0.0 B)
+23/12/02 17:54:15 INFO BlockManager: Dropping block rdd_36_0 from memory
+23/12/02 17:54:15 INFO BlockManagerInfo: Updated rdd_36_0 on disk on p-sc-2348.2e.hpc.psu.edu:46407 (current size: 70.9 MiB, original size: 70.9 MiB)
+23/12/02 17:54:15 INFO MemoryStore: After dropping 2 blocks, free memory is 273.6 MiB
+23/12/02 17:54:16 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 42.2 MiB to disk (0  time so far)
+23/12/02 17:54:16 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 42.2 MiB to disk (0  time so far)
+23/12/02 17:54:16 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 42.2 MiB to disk (0  time so far)
+23/12/02 17:54:16 INFO UnsafeExternalSorter: Thread 127 spilling sort data of 42.2 MiB to disk (0  time so far)
+23/12/02 17:54:16 INFO UnsafeExternalSorter: Thread 79 spilling sort data of 42.2 MiB to disk (0  time so far)
+23/12/02 17:54:16 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 42.2 MiB to disk (0  time so far)
+23/12/02 17:54:16 INFO UnsafeExternalSorter: Thread 94 spilling sort data of 42.2 MiB to disk (0  time so far)
+23/12/02 17:54:16 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 42.2 MiB to disk (0  time so far)
+23/12/02 17:54:16 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 42.2 MiB to disk (0  time so far)
+23/12/02 17:54:16 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 42.2 MiB to disk (1  time so far)
+23/12/02 17:54:17 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 42.2 MiB to disk (1  time so far)
+23/12/02 17:54:17 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 42.2 MiB to disk (1  time so far)
+23/12/02 17:54:17 INFO UnsafeExternalSorter: Thread 127 spilling sort data of 42.2 MiB to disk (1  time so far)
+23/12/02 17:54:17 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 42.2 MiB to disk (1  time so far)
+23/12/02 17:54:17 INFO UnsafeExternalSorter: Thread 94 spilling sort data of 42.2 MiB to disk (1  time so far)
+23/12/02 17:54:17 INFO UnsafeExternalSorter: Thread 79 spilling sort data of 42.2 MiB to disk (1  time so far)
+23/12/02 17:54:17 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 42.2 MiB to disk (1  time so far)
+23/12/02 17:54:17 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 42.2 MiB to disk (1  time so far)
+23/12/02 17:54:17 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 42.2 MiB to disk (1  time so far)
+23/12/02 17:54:18 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 42.2 MiB to disk (2  times so far)
+23/12/02 17:54:18 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 42.2 MiB to disk (2  times so far)
+23/12/02 17:54:18 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 42.2 MiB to disk (2  times so far)
+23/12/02 17:54:18 INFO UnsafeExternalSorter: Thread 127 spilling sort data of 42.2 MiB to disk (2  times so far)
+23/12/02 17:54:18 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 42.2 MiB to disk (2  times so far)
+23/12/02 17:54:18 INFO UnsafeExternalSorter: Thread 79 spilling sort data of 42.2 MiB to disk (2  times so far)
+23/12/02 17:54:18 INFO UnsafeExternalSorter: Thread 94 spilling sort data of 42.2 MiB to disk (2  times so far)
+23/12/02 17:54:18 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 42.2 MiB to disk (2  times so far)
+23/12/02 17:54:18 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 42.2 MiB to disk (2  times so far)
+23/12/02 17:54:18 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 42.2 MiB to disk (2  times so far)
+23/12/02 17:54:19 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 42.2 MiB to disk (3  times so far)
+23/12/02 17:54:19 INFO UnsafeExternalSorter: Thread 127 spilling sort data of 42.2 MiB to disk (3  times so far)
+23/12/02 17:54:19 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 42.2 MiB to disk (3  times so far)
+23/12/02 17:54:19 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 42.2 MiB to disk (3  times so far)
+23/12/02 17:54:19 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 42.2 MiB to disk (3  times so far)
+23/12/02 17:54:20 INFO UnsafeExternalSorter: Thread 94 spilling sort data of 42.2 MiB to disk (3  times so far)
+23/12/02 17:54:20 INFO UnsafeExternalSorter: Thread 79 spilling sort data of 42.2 MiB to disk (3  times so far)
+23/12/02 17:54:20 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 42.2 MiB to disk (3  times so far)
+23/12/02 17:54:20 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 42.2 MiB to disk (3  times so far)
+23/12/02 17:54:20 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 42.2 MiB to disk (3  times so far)
+23/12/02 17:54:20 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 42.2 MiB to disk (4  times so far)
+23/12/02 17:54:20 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 42.2 MiB to disk (4  times so far)
+23/12/02 17:54:20 INFO UnsafeExternalSorter: Thread 127 spilling sort data of 42.2 MiB to disk (4  times so far)
+23/12/02 17:54:20 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 42.2 MiB to disk (4  times so far)
+23/12/02 17:54:21 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 42.2 MiB to disk (4  times so far)
+23/12/02 17:54:21 INFO UnsafeExternalSorter: Thread 79 spilling sort data of 42.2 MiB to disk (4  times so far)
+23/12/02 17:54:21 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 42.2 MiB to disk (4  times so far)
+23/12/02 17:54:21 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 42.2 MiB to disk (4  times so far)
+23/12/02 17:54:21 INFO UnsafeExternalSorter: Thread 94 spilling sort data of 42.2 MiB to disk (4  times so far)
+23/12/02 17:54:21 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 42.2 MiB to disk (4  times so far)
+23/12/02 17:54:21 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 42.2 MiB to disk (5  times so far)
+23/12/02 17:54:21 INFO UnsafeExternalSorter: Thread 127 spilling sort data of 42.2 MiB to disk (5  times so far)
+23/12/02 17:54:21 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 42.2 MiB to disk (5  times so far)
+23/12/02 17:54:22 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 42.2 MiB to disk (5  times so far)
+23/12/02 17:54:22 INFO UnsafeExternalSorter: Thread 79 spilling sort data of 42.2 MiB to disk (5  times so far)
+23/12/02 17:54:22 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 42.2 MiB to disk (5  times so far)
+23/12/02 17:54:22 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 42.2 MiB to disk (5  times so far)
+23/12/02 17:54:22 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 42.2 MiB to disk (5  times so far)
+23/12/02 17:54:22 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 42.2 MiB to disk (5  times so far)
+23/12/02 17:54:22 INFO UnsafeExternalSorter: Thread 94 spilling sort data of 42.2 MiB to disk (5  times so far)
+23/12/02 17:54:22 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 42.2 MiB to disk (6  times so far)
+23/12/02 17:54:22 INFO UnsafeExternalSorter: Thread 127 spilling sort data of 42.2 MiB to disk (6  times so far)
+23/12/02 17:54:22 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 42.2 MiB to disk (6  times so far)
+23/12/02 17:54:23 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 42.2 MiB to disk (6  times so far)
+23/12/02 17:54:23 INFO UnsafeExternalSorter: Thread 79 spilling sort data of 42.2 MiB to disk (6  times so far)
+23/12/02 17:54:23 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 42.2 MiB to disk (6  times so far)
+23/12/02 17:54:23 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 42.2 MiB to disk (6  times so far)
+23/12/02 17:54:23 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 42.2 MiB to disk (6  times so far)
+23/12/02 17:54:23 INFO UnsafeExternalSorter: Thread 94 spilling sort data of 42.2 MiB to disk (6  times so far)
+23/12/02 17:54:23 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 42.2 MiB to disk (6  times so far)
+23/12/02 17:54:23 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 42.2 MiB to disk (7  times so far)
+23/12/02 17:54:23 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 42.2 MiB to disk (7  times so far)
+23/12/02 17:54:24 INFO UnsafeExternalSorter: Thread 127 spilling sort data of 42.2 MiB to disk (7  times so far)
+23/12/02 17:54:24 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 42.2 MiB to disk (7  times so far)
+23/12/02 17:54:24 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 42.2 MiB to disk (7  times so far)
+23/12/02 17:54:24 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 42.2 MiB to disk (7  times so far)
+23/12/02 17:54:24 INFO UnsafeExternalSorter: Thread 79 spilling sort data of 42.2 MiB to disk (7  times so far)
+23/12/02 17:54:24 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 42.2 MiB to disk (7  times so far)
+23/12/02 17:54:24 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 42.2 MiB to disk (7  times so far)
+23/12/02 17:54:24 INFO UnsafeExternalSorter: Thread 94 spilling sort data of 42.2 MiB to disk (7  times so far)
+23/12/02 17:54:28 WARN BlockManager: Block rdd_36_3 could not be removed as it was not found on disk or in memory
+23/12/02 17:54:28 ERROR Executor: Exception in task 3.0 in stage 10.0 (TID 149)
+java.lang.OutOfMemoryError: Java heap space
+Exception in thread "read-ahead" java.lang.OutOfMemoryError: Java heap space
+23/12/02 17:54:28 ERROR Utils: uncaught error in thread Spark Context Cleaner, stopping SparkContext
+java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.ContextCleaner$$Lambda$832/0x0000000840690840.get$Lambda(Unknown Source)
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder)
+	at org.apache.spark.ContextCleaner.$anonfun$keepCleaning$1(ContextCleaner.scala:195)
+	at org.apache.spark.ContextCleaner$$Lambda$749/0x00000008405f5840.apply$mcV$sp(Unknown Source)
+	at org.apache.spark.util.Utils$.tryOrStopSparkContext(Utils.scala:1446)
+	at org.apache.spark.ContextCleaner.org$apache$spark$ContextCleaner$$keepCleaning(ContextCleaner.scala:189)
+	at org.apache.spark.ContextCleaner$$anon$1.run(ContextCleaner.scala:79)
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.addConditionWaiter(AbstractQueuedSynchronizer.java:1896)
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2077)
+	at java.base/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+23/12/02 17:54:28 ERROR Utils: throw uncaught fatal error in thread Spark Context Cleaner
+java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.ContextCleaner$$Lambda$832/0x0000000840690840.get$Lambda(Unknown Source)
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder)
+	at org.apache.spark.ContextCleaner.$anonfun$keepCleaning$1(ContextCleaner.scala:195)
+	at org.apache.spark.ContextCleaner$$Lambda$749/0x00000008405f5840.apply$mcV$sp(Unknown Source)
+	at org.apache.spark.util.Utils$.tryOrStopSparkContext(Utils.scala:1446)
+	at org.apache.spark.ContextCleaner.org$apache$spark$ContextCleaner$$keepCleaning(ContextCleaner.scala:189)
+	at org.apache.spark.ContextCleaner$$anon$1.run(ContextCleaner.scala:79)
+Exception in thread "Spark Context Cleaner" java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.ContextCleaner$$Lambda$832/0x0000000840690840.get$Lambda(Unknown Source)
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder)
+	at org.apache.spark.ContextCleaner.$anonfun$keepCleaning$1(ContextCleaner.scala:195)
+	at org.apache.spark.ContextCleaner$$Lambda$749/0x00000008405f5840.apply$mcV$sp(Unknown Source)
+	at org.apache.spark.util.Utils$.tryOrStopSparkContext(Utils.scala:1446)
+	at org.apache.spark.ContextCleaner.org$apache$spark$ContextCleaner$$keepCleaning(ContextCleaner.scala:189)
+	at org.apache.spark.ContextCleaner$$anon$1.run(ContextCleaner.scala:79)
+23/12/02 17:54:28 ERROR SparkUncaughtExceptionHandler: Uncaught exception in thread Thread[Executor task launch worker for task 3.0 in stage 10.0 (TID 149),5,main]
+java.lang.OutOfMemoryError: Java heap space
+23/12/02 17:54:28 INFO DiskBlockManager: Shutdown hook called
+23/12/02 17:54:28 INFO SparkUI: Stopped Spark web UI at http://p-sc-2348.2e.hpc.psu.edu:4041
+23/12/02 17:54:28 INFO DAGScheduler: Job 8 failed: aggregate at DecisionTreeMetadata.scala:125, took 13.402618 s
+23/12/02 17:54:28 INFO DAGScheduler: ResultStage 10 (aggregate at DecisionTreeMetadata.scala:125) failed in 13.398 s due to Stage cancelled because SparkContext was shut down
+23/12/02 17:54:28 INFO TaskSetManager: Starting task 11.0 in stage 10.0 (TID 157) (p-sc-2348.2e.hpc.psu.edu, executor driver, partition 11, PROCESS_LOCAL, 4922 bytes) taskResourceAssignments Map()
+23/12/02 17:54:28 ERROR Inbox: Ignoring error
+java.util.concurrent.RejectedExecutionException: Task org.apache.spark.executor.Executor$TaskRunner@7c10a99c rejected from java.util.concurrent.ThreadPoolExecutor@33ee569e[Shutting down, pool size = 10, active threads = 10, queued tasks = 0, completed tasks = 147]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1355)
+	at org.apache.spark.executor.Executor.launchTask(Executor.scala:305)
+	at org.apache.spark.scheduler.local.LocalEndpoint.$anonfun$reviveOffers$1(LocalSchedulerBackend.scala:93)
+	at org.apache.spark.scheduler.local.LocalEndpoint.$anonfun$reviveOffers$1$adapted(LocalSchedulerBackend.scala:91)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at org.apache.spark.scheduler.local.LocalEndpoint.reviveOffers(LocalSchedulerBackend.scala:91)
+	at org.apache.spark.scheduler.local.LocalEndpoint$$anonfun$receive$1.applyOrElse(LocalSchedulerBackend.scala:74)
+	at org.apache.spark.rpc.netty.Inbox.$anonfun$process$1(Inbox.scala:115)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:213)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:100)
+	at org.apache.spark.rpc.netty.MessageLoop.org$apache$spark$rpc$netty$MessageLoop$$receiveLoop(MessageLoop.scala:75)
+	at org.apache.spark.rpc.netty.MessageLoop$$anon$1.run(MessageLoop.scala:41)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+23/12/02 17:54:28 ERROR Instrumentation: org.apache.spark.SparkException: Job 8 cancelled because SparkContext was shut down
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$cleanUpAfterSchedulerStop$1(DAGScheduler.scala:1188)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$cleanUpAfterSchedulerStop$1$adapted(DAGScheduler.scala:1186)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:79)
+	at org.apache.spark.scheduler.DAGScheduler.cleanUpAfterSchedulerStop(DAGScheduler.scala:1186)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onStop(DAGScheduler.scala:2887)
+	at org.apache.spark.util.EventLoop.stop(EventLoop.scala:84)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:2784)
+	at org.apache.spark.SparkContext.$anonfun$stop$11(SparkContext.scala:2095)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1484)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2095)
+	at org.apache.spark.SparkContext$$anon$3.run(SparkContext.scala:2049)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:952)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2228)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2323)
+	at org.apache.spark.rdd.RDD.$anonfun$aggregate$1(RDD.scala:1200)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:406)
+	at org.apache.spark.rdd.RDD.aggregate(RDD.scala:1193)
+	at org.apache.spark.ml.tree.impl.DecisionTreeMetadata$.buildMetadata(DecisionTreeMetadata.scala:125)
+	at org.apache.spark.ml.tree.impl.RandomForest$.run(RandomForest.scala:274)
+	at org.apache.spark.ml.regression.DecisionTreeRegressor.$anonfun$train$1(DecisionTreeRegressor.scala:126)
+	at org.apache.spark.ml.util.Instrumentation$.$anonfun$instrumented$1(Instrumentation.scala:191)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.ml.util.Instrumentation$.instrumented(Instrumentation.scala:191)
+	at org.apache.spark.ml.regression.DecisionTreeRegressor.train(DecisionTreeRegressor.scala:114)
+	at org.apache.spark.ml.regression.DecisionTreeRegressor.train(DecisionTreeRegressor.scala:44)
+	at org.apache.spark.ml.Predictor.fit(Predictor.scala:151)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+23/12/02 17:54:28 INFO ShutdownHookManager: Shutdown hook called
+23/12/02 17:54:28 INFO ShutdownHookManager: Deleting directory /tmp/spark-6e83fa2d-231f-4da1-b937-0be9e06b0671/pyspark-0a9f3aae-3e58-4f1d-99c1-33e2258350a8
+23/12/02 17:54:28 WARN TaskSetManager: Lost task 3.0 in stage 10.0 (TID 149) (p-sc-2348.2e.hpc.psu.edu executor driver): java.lang.OutOfMemoryError: Java heap space
+
+23/12/02 17:54:28 INFO ShutdownHookManager: Deleting directory /tmp/spark-2ad9eb89-2175-43f2-b9a5-d930eeb73f27
+23/12/02 17:54:28 ERROR TaskSetManager: Task 3 in stage 10.0 failed 1 times; aborting job
+23/12/02 17:54:28 INFO ShutdownHookManager: Deleting directory /tmp/spark-6e83fa2d-231f-4da1-b937-0be9e06b0671/userFiles-0182b6ba-7aa0-4519-81fc-3173c8267866
+23/12/02 17:54:28 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/12/02 17:54:28 INFO MemoryStore: MemoryStore cleared
+23/12/02 17:54:28 INFO BlockManager: BlockManager stopped
+23/12/02 17:54:28 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/12/02 17:54:28 INFO ShutdownHookManager: Deleting directory /tmp/spark-6e83fa2d-231f-4da1-b937-0be9e06b0671
+23/12/02 17:54:28 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+Traceback (most recent call last):
+  File "/storage/work/sxs6549/Project/cluster_decision_tree.py", line 173, in <module>
+    model = dt.fit(trainingData)
+  File "/storage/icds/RISE/sw8/spark-3.3.0-bin-hadoop3/python/lib/pyspark.zip/pyspark/ml/base.py", line 205, in fit
+  File "/storage/icds/RISE/sw8/spark-3.3.0-bin-hadoop3/python/lib/pyspark.zip/pyspark/ml/wrapper.py", line 379, in _fit
+  File "/storage/icds/RISE/sw8/spark-3.3.0-bin-hadoop3/python/lib/pyspark.zip/pyspark/ml/wrapper.py", line 376, in _fit_java
+  File "/storage/icds/RISE/sw8/spark-3.3.0-bin-hadoop3/python/lib/py4j-0.10.9.5-src.zip/py4j/java_gateway.py", line 1321, in __call__
+  File "/storage/icds/RISE/sw8/spark-3.3.0-bin-hadoop3/python/lib/pyspark.zip/pyspark/sql/utils.py", line 190, in deco
+23/12/02 17:54:28 INFO SparkContext: Successfully stopped SparkContext
+  File "/storage/icds/RISE/sw8/spark-3.3.0-bin-hadoop3/python/lib/py4j-0.10.9.5-src.zip/py4j/protocol.py", line 326, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling o99.fit.
+: org.apache.spark.SparkException: Job 8 cancelled because SparkContext was shut down
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$cleanUpAfterSchedulerStop$1(DAGScheduler.scala:1188)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$cleanUpAfterSchedulerStop$1$adapted(DAGScheduler.scala:1186)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:79)
+	at org.apache.spark.scheduler.DAGScheduler.cleanUpAfterSchedulerStop(DAGScheduler.scala:1186)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onStop(DAGScheduler.scala:2887)
+	at org.apache.spark.util.EventLoop.stop(EventLoop.scala:84)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:2784)
+	at org.apache.spark.SparkContext.$anonfun$stop$11(SparkContext.scala:2095)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1484)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2095)
+	at org.apache.spark.SparkContext$$anon$3.run(SparkContext.scala:2049)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:952)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2228)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2323)
+	at org.apache.spark.rdd.RDD.$anonfun$aggregate$1(RDD.scala:1200)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:406)
+	at org.apache.spark.rdd.RDD.aggregate(RDD.scala:1193)
+	at org.apache.spark.ml.tree.impl.DecisionTreeMetadata$.buildMetadata(DecisionTreeMetadata.scala:125)
+	at org.apache.spark.ml.tree.impl.RandomForest$.run(RandomForest.scala:274)
+	at org.apache.spark.ml.regression.DecisionTreeRegressor.$anonfun$train$1(DecisionTreeRegressor.scala:126)
+	at org.apache.spark.ml.util.Instrumentation$.$anonfun$instrumented$1(Instrumentation.scala:191)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.ml.util.Instrumentation$.instrumented(Instrumentation.scala:191)
+	at org.apache.spark.ml.regression.DecisionTreeRegressor.train(DecisionTreeRegressor.scala:114)
+	at org.apache.spark.ml.regression.DecisionTreeRegressor.train(DecisionTreeRegressor.scala:44)
+	at org.apache.spark.ml.Predictor.fit(Predictor.scala:151)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Execution time: 151 seconds
